@@ -54,10 +54,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent(authData, router, changeDetectorRef, media) {
+    function AppComponent(authData, router, changeDetectorRef, media, renderer) {
         var _this = this;
         this.authData = authData;
         this.router = router;
+        this.renderer = renderer;
         this.title = 'app';
         this.fillerNav = Array(50).fill(0).map(function (_, i) { return "Nav Item " + (i + 1); });
         this.fillerContent = Array(50).fill(0).map(function () {
@@ -87,6 +88,9 @@ var AppComponent = /** @class */ (function () {
     AppComponent.prototype.ngOnDestroy = function () {
         this.mobileQuery.removeListener(this._mobileQueryListener);
     };
+    AppComponent.prototype.onDeactivate = function () {
+        this.renderer.setElementProperty(document.body, "scrollTop", 0);
+    };
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-root',
@@ -96,7 +100,8 @@ var AppComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_providers_service__["a" /* AuthProvidersService */],
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_cdk_layout__["d" /* MediaMatcher */]])
+            __WEBPACK_IMPORTED_MODULE_3__angular_cdk_layout__["d" /* MediaMatcher */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer */]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -349,7 +354,7 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/components/confirm-dialog/confirm-dialog.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<h1 mat-dialog-title>Confirm</h1>\n<div mat-dialog-content>\n  <p>Are you sure you want to delete <strong>{{ data.name }}</strong> {{ data.type }}</p>\n</div>\n\n\n<div mat-dialog-actions class=\"uk-align-right\">\n  <button mat-button (click)=\"onCancel()\">NO</button>\n  <button mat-button (click)=\"onConfirm()\" color=\"primary\" cdkFocusInitial>YES</button>\n</div>"
+module.exports = "\n<h1 mat-dialog-title>Confirm Delete</h1>\n<div mat-dialog-content>\n  <p>Are you sure you want to delete <strong>{{ data.name }}</strong> {{ data.type }}</p>\n</div>\n\n\n<div mat-dialog-actions class=\"uk-align-right\">\n  <button mat-button (click)=\"onCancel()\">NO</button>\n  <button mat-button (click)=\"onConfirm()\" color=\"primary\" cdkFocusInitial>YES</button>\n</div>"
 
 /***/ }),
 
@@ -577,6 +582,7 @@ var LoginComponent = /** @class */ (function () {
         });
     }
     LoginComponent.prototype.ngOnInit = function () {
+        window.scrollTo(0, 0);
     };
     LoginComponent.prototype.loginUser = function () {
         var _this = this;
@@ -1004,6 +1010,7 @@ var ClubsListingComponent = /** @class */ (function () {
         this.getCompetitionsTypes();
     }
     ClubsListingComponent.prototype.ngOnInit = function () {
+        window.scrollTo(0, 0);
     };
     ClubsListingComponent.prototype.applyFilter = function (filterValue) {
         filterValue = filterValue.trim(); // Remove whitespace
@@ -1238,6 +1245,7 @@ var CompetitionListingsComponent = /** @class */ (function () {
         });
     }
     CompetitionListingsComponent.prototype.ngOnInit = function () {
+        window.scrollTo(0, 0);
         this.getCompetitionsTypes();
     };
     CompetitionListingsComponent.prototype.ngAfterViewInit = function () {
@@ -1331,10 +1339,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var DashboardComponent = /** @class */ (function () {
-    function DashboardComponent(authData, router) {
+    function DashboardComponent(authData, router, renderer) {
         var _this = this;
         this.authData = authData;
         this.router = router;
+        this.renderer = renderer;
         authData.currentUser().subscribe(function (data) {
             _this.currentUser = data;
             if (!_this.currentUser) {
@@ -1344,13 +1353,18 @@ var DashboardComponent = /** @class */ (function () {
     }
     DashboardComponent.prototype.ngOnInit = function () {
     };
+    DashboardComponent.prototype.onDeactivate = function () {
+        this.renderer.setElementProperty(document.body, "scrollTop", 0);
+    };
     DashboardComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-dashboard',
             template: __webpack_require__("./src/app/pages/dashboard/dashboard.component.html"),
             styles: [__webpack_require__("./src/app/pages/dashboard/dashboard.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_providers_service__["a" /* AuthProvidersService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_providers_service__["a" /* AuthProvidersService */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer */]])
     ], DashboardComponent);
     return DashboardComponent;
 }());
@@ -1587,6 +1601,7 @@ var FixturesComponent = /** @class */ (function () {
         });
     }
     FixturesComponent.prototype.ngOnInit = function () {
+        window.scrollTo(0, 0);
         this.getCompetitions();
         this.getAllFixtures();
         this.getCampaigns();
@@ -1936,6 +1951,7 @@ var NewsListingComponent = /** @class */ (function () {
     function NewsListingComponent() {
     }
     NewsListingComponent.prototype.ngOnInit = function () {
+        window.scrollTo(0, 0);
     };
     NewsListingComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
