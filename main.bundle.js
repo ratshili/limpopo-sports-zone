@@ -1337,7 +1337,7 @@ var CompetitionListingsComponent = /** @class */ (function () {
 /***/ "./src/app/pages/competitions/manage-groups/manage-groups.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>{{ data.description }}</h1>\n<form [formGroup]=\"form\" class=\"manage-group-form\">\n\n<mat-dialog-content>\n  <p>Group allocation</p>\n  <mat-card class=\"uk-margin-small-top\" *ngFor=\"let group of [1,2,3,4]\">\n    <h5>Group A</h5>\n    <mat-form-field style=\"width: 100%\" *ngFor=\"let club of getGroupsArray()\">\n        <mat-select placeholder=\"Club {{ club }}\" formControlName=\"club\" (change)=\"onClubSelect($event.value, group)\">\n            <mat-option *ngFor=\"let item of clubsData\" [value]=\"item.id\">\n            {{ item.name }}\n            </mat-option>\n        </mat-select>\n    </mat-form-field>\n  </mat-card>\n</mat-dialog-content>\n\n\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close>Cancel</button>\n  <button mat-button>Save</button>\n</mat-dialog-actions>\n</form>"
+module.exports = "<h1 mat-dialog-title>{{ data.description }}</h1>\n<form [formGroup]=\"form\" class=\"manage-group-form\">\n\n<mat-dialog-content>\n  <p>Group allocation</p>\n  <mat-card class=\"uk-margin-small-top\" *ngFor=\"let group of [1,2,3,4]\">\n    <h5>Group A</h5>\n    <mat-form-field style=\"width: 100%\" *ngFor=\"let club of getGroupsArray()\">\n        <mat-select placeholder=\"Club {{ club }}\" formControlName=\"club\" (change)=\"onClubSelect($event.value, group)\">\n            <mat-option *ngFor=\"let item of clubsData\" [value]=\"item.id\">\n            {{ item.name }}\n            </mat-option>\n        </mat-select>\n    </mat-form-field>\n  </mat-card>\n</mat-dialog-content>\n\n\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close>Cancel</button>\n  <button mat-button (click)=\"updateCompetition()\">Save</button>\n</mat-dialog-actions>\n</form>"
 
 /***/ }),
 
@@ -1432,6 +1432,12 @@ var ManageGroupsComponent = /** @class */ (function () {
         console.log(this.selectedClubs);
     };
     ManageGroupsComponent.prototype.onCancel = function () {
+        this.dialogRef.close();
+    };
+    ManageGroupsComponent.prototype.updateCompetition = function () {
+        this.competitionData = this.data;
+        this.competitionData.groups = this.selectedClubs;
+        this.competitionServices.updateCompetition(this.competitionData);
         this.dialogRef.close();
     };
     ManageGroupsComponent = __decorate([
