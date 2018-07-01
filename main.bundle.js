@@ -71,7 +71,7 @@ var AppComponent = /** @class */ (function () {
             _this.currentUser = data;
         });
         this.router.events.subscribe(function (event) {
-            if (event instanceof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* NavigationEnd */]) {
+            if (event instanceof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* NavigationEnd */]) {
                 _this.checkIfAuthPages();
             }
         });
@@ -95,7 +95,7 @@ var AppComponent = /** @class */ (function () {
             styles: [__webpack_require__("./src/app/app.component.scss")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_providers_service__["a" /* AuthProvidersService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */],
             __WEBPACK_IMPORTED_MODULE_3__angular_cdk_layout__["d" /* MediaMatcher */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer */]])
@@ -123,34 +123,39 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_cdk_table__ = __webpack_require__("./node_modules/@angular/cdk/esm5/table.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_side_menu_side_menu_component__ = __webpack_require__("./src/app/components/side-menu/side-menu.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_navbar_navbar_component__ = __webpack_require__("./src/app/components/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_auth_login_login_component__ = __webpack_require__("./src/app/pages/auth/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard_component__ = __webpack_require__("./src/app/pages/dashboard/dashboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_page_not_found_page_not_found_component__ = __webpack_require__("./src/app/pages/page-not-found/page-not-found.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_auth_providers_service__ = __webpack_require__("./src/app/providers/auth-providers.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angularfire2_auth__ = __webpack_require__("./node_modules/angularfire2/auth/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_competitions_competition_listings_competition_listings_component__ = __webpack_require__("./src/app/pages/competitions/competition-listings/competition-listings.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_clubs_clubs_listing_clubs_listing_component__ = __webpack_require__("./src/app/pages/clubs/clubs-listing/clubs-listing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_competitions_competition_providers_service__ = __webpack_require__("./src/app/providers/competitions/competition-providers.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_confirm_dialog_confirm_dialog_component__ = __webpack_require__("./src/app/components/confirm-dialog/confirm-dialog.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_dialogs_confirm_dialog_service__ = __webpack_require__("./src/app/providers/dialogs/confirm-dialog.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_competitions_add_competition_add_competitions_component__ = __webpack_require__("./src/app/pages/competitions/add-competition/add-competitions.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_clubs_add_club_add_club_component__ = __webpack_require__("./src/app/pages/clubs/add-club/add-club.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_clubs_clubs_providers_service__ = __webpack_require__("./src/app/providers/clubs/clubs-providers.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_matches_standings_standings_component__ = __webpack_require__("./src/app/pages/matches/standings/standings.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_news_news_listing_news_listing_component__ = __webpack_require__("./src/app/pages/news/news-listing/news-listing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_matches_fixtures_add_fixture_add_fixture_component__ = __webpack_require__("./src/app/pages/matches/fixtures/add-fixture/add-fixture.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_matches_fixtures_fixtures_listing_fixtures_component__ = __webpack_require__("./src/app/pages/matches/fixtures/fixtures-listing/fixtures.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__providers_fixtures_fixtures_providers_service__ = __webpack_require__("./src/app/providers/fixtures/fixtures-providers.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_matches_fixtures_update_fixture_update_fixture_component__ = __webpack_require__("./src/app/pages/matches/fixtures/update-fixture/update-fixture.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_campaigns_campaigns_component__ = __webpack_require__("./src/app/pages/campaigns/campaigns.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_campaigns_add_campaign_add_campaign_component__ = __webpack_require__("./src/app/pages/campaigns/add-campaign/add-campaign.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__providers_campains_campaigns_service__ = __webpack_require__("./src/app/providers/campains/campaigns.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_competitions_manage_groups_manage_groups_component__ = __webpack_require__("./src/app/pages/competitions/manage-groups/manage-groups.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ngx_order_pipe__ = __webpack_require__("./node_modules/ngx-order-pipe/ngx-order-pipe.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_side_menu_side_menu_component__ = __webpack_require__("./src/app/components/side-menu/side-menu.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_navbar_navbar_component__ = __webpack_require__("./src/app/components/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_auth_login_login_component__ = __webpack_require__("./src/app/pages/auth/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_dashboard_dashboard_component__ = __webpack_require__("./src/app/pages/dashboard/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_page_not_found_page_not_found_component__ = __webpack_require__("./src/app/pages/page-not-found/page-not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_auth_providers_service__ = __webpack_require__("./src/app/providers/auth-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angularfire2_auth__ = __webpack_require__("./node_modules/angularfire2/auth/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_competitions_competition_listings_competition_listings_component__ = __webpack_require__("./src/app/pages/competitions/competition-listings/competition-listings.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_clubs_clubs_listing_clubs_listing_component__ = __webpack_require__("./src/app/pages/clubs/clubs-listing/clubs-listing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_competitions_competition_providers_service__ = __webpack_require__("./src/app/providers/competitions/competition-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_confirm_dialog_confirm_dialog_component__ = __webpack_require__("./src/app/components/confirm-dialog/confirm-dialog.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_dialogs_confirm_dialog_service__ = __webpack_require__("./src/app/providers/dialogs/confirm-dialog.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_competitions_add_competition_add_competitions_component__ = __webpack_require__("./src/app/pages/competitions/add-competition/add-competitions.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_clubs_add_club_add_club_component__ = __webpack_require__("./src/app/pages/clubs/add-club/add-club.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_clubs_clubs_providers_service__ = __webpack_require__("./src/app/providers/clubs/clubs-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_matches_standings_standings_component__ = __webpack_require__("./src/app/pages/matches/standings/standings.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_news_news_listing_news_listing_component__ = __webpack_require__("./src/app/pages/news/news-listing/news-listing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_matches_fixtures_add_fixture_add_fixture_component__ = __webpack_require__("./src/app/pages/matches/fixtures/add-fixture/add-fixture.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_matches_fixtures_fixtures_listing_fixtures_component__ = __webpack_require__("./src/app/pages/matches/fixtures/fixtures-listing/fixtures.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__providers_fixtures_fixtures_providers_service__ = __webpack_require__("./src/app/providers/fixtures/fixtures-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_matches_fixtures_update_fixture_update_fixture_component__ = __webpack_require__("./src/app/pages/matches/fixtures/update-fixture/update-fixture.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_campaigns_campaigns_component__ = __webpack_require__("./src/app/pages/campaigns/campaigns.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_campaigns_add_campaign_add_campaign_component__ = __webpack_require__("./src/app/pages/campaigns/add-campaign/add-campaign.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__providers_campains_campaigns_service__ = __webpack_require__("./src/app/providers/campains/campaigns.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_competitions_manage_groups_manage_groups_component__ = __webpack_require__("./src/app/pages/competitions/manage-groups/manage-groups.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_competitions_competition_competition_component__ = __webpack_require__("./src/app/pages/competitions/competition/competition.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_reusable_log_table_log_table_component__ = __webpack_require__("./src/app/components/reusable/log-table/log-table.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_reusable_group_tables_group_tables_component__ = __webpack_require__("./src/app/components/reusable/group-tables/group-tables.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_reusable_fixtures_listing_fixtures_listing_component__ = __webpack_require__("./src/app/components/reusable/fixtures-listing/fixtures-listing.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -164,6 +169,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
+ // <- import OrderModule
 
 
 
@@ -197,19 +207,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_17__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
         children: [
-            { path: '', component: __WEBPACK_IMPORTED_MODULE_32__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */] },
-            { path: 'competitions', component: __WEBPACK_IMPORTED_MODULE_21__pages_competitions_competition_listings_competition_listings_component__["a" /* CompetitionListingsComponent */] },
-            { path: 'clubs', component: __WEBPACK_IMPORTED_MODULE_22__pages_clubs_clubs_listing_clubs_listing_component__["a" /* ClubsListingComponent */] },
-            { path: 'fixtures', component: __WEBPACK_IMPORTED_MODULE_32__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */] },
-            { path: 'campaigns', component: __WEBPACK_IMPORTED_MODULE_35__pages_campaigns_campaigns_component__["a" /* CampaignsComponent */] },
-            { path: 'standings', component: __WEBPACK_IMPORTED_MODULE_29__pages_matches_standings_standings_component__["a" /* StandingsComponent */] }
+            { path: '', component: __WEBPACK_IMPORTED_MODULE_33__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */] },
+            { path: 'competitions', component: __WEBPACK_IMPORTED_MODULE_22__pages_competitions_competition_listings_competition_listings_component__["a" /* CompetitionListingsComponent */] },
+            { path: 'competitions/:id', component: __WEBPACK_IMPORTED_MODULE_40__pages_competitions_competition_competition_component__["a" /* CompetitionComponent */] },
+            { path: 'clubs', component: __WEBPACK_IMPORTED_MODULE_23__pages_clubs_clubs_listing_clubs_listing_component__["a" /* ClubsListingComponent */] },
+            { path: 'fixtures', component: __WEBPACK_IMPORTED_MODULE_33__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */] },
+            { path: 'campaigns', component: __WEBPACK_IMPORTED_MODULE_36__pages_campaigns_campaigns_component__["a" /* CampaignsComponent */] },
+            { path: 'standings', component: __WEBPACK_IMPORTED_MODULE_30__pages_matches_standings_standings_component__["a" /* StandingsComponent */] }
         ]
     },
-    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_15__pages_auth_login_login_component__["a" /* LoginComponent */] },
-    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard_component__["a" /* DashboardComponent */] },
-    { path: '**', component: __WEBPACK_IMPORTED_MODULE_17__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
+    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_16__pages_auth_login_login_component__["a" /* LoginComponent */] },
+    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_17__pages_dashboard_dashboard_component__["a" /* DashboardComponent */] },
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_18__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -217,132 +228,137 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_auth_login_login_component__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__components_navbar_navbar_component__["a" /* NavbarComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_competitions_competition_listings_competition_listings_component__["a" /* CompetitionListingsComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__components_side_menu_side_menu_component__["a" /* SideMenuComponent */],
-                __WEBPACK_IMPORTED_MODULE_32__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_clubs_clubs_listing_clubs_listing_component__["a" /* ClubsListingComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__pages_competitions_add_competition_add_competitions_component__["a" /* AddCompetitionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__components_confirm_dialog_confirm_dialog_component__["a" /* ConfirmDialogComponent */],
-                __WEBPACK_IMPORTED_MODULE_27__pages_clubs_add_club_add_club_component__["a" /* AddClubComponent */],
-                __WEBPACK_IMPORTED_MODULE_29__pages_matches_standings_standings_component__["a" /* StandingsComponent */],
-                __WEBPACK_IMPORTED_MODULE_30__pages_news_news_listing_news_listing_component__["a" /* NewsListingComponent */],
-                __WEBPACK_IMPORTED_MODULE_31__pages_matches_fixtures_add_fixture_add_fixture_component__["a" /* AddFixtureComponent */],
-                __WEBPACK_IMPORTED_MODULE_34__pages_matches_fixtures_update_fixture_update_fixture_component__["a" /* UpdateFixtureComponent */],
-                __WEBPACK_IMPORTED_MODULE_35__pages_campaigns_campaigns_component__["a" /* CampaignsComponent */],
-                __WEBPACK_IMPORTED_MODULE_36__pages_campaigns_add_campaign_add_campaign_component__["a" /* AddCampaignComponent */],
-                __WEBPACK_IMPORTED_MODULE_38__pages_competitions_manage_groups_manage_groups_component__["a" /* ManageGroupsComponent */]
+                __WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_auth_login_login_component__["a" /* LoginComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__components_navbar_navbar_component__["a" /* NavbarComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_competitions_competition_listings_competition_listings_component__["a" /* CompetitionListingsComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_side_menu_side_menu_component__["a" /* SideMenuComponent */],
+                __WEBPACK_IMPORTED_MODULE_33__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_clubs_clubs_listing_clubs_listing_component__["a" /* ClubsListingComponent */],
+                __WEBPACK_IMPORTED_MODULE_27__pages_competitions_add_competition_add_competitions_component__["a" /* AddCompetitionsComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__components_confirm_dialog_confirm_dialog_component__["a" /* ConfirmDialogComponent */],
+                __WEBPACK_IMPORTED_MODULE_28__pages_clubs_add_club_add_club_component__["a" /* AddClubComponent */],
+                __WEBPACK_IMPORTED_MODULE_30__pages_matches_standings_standings_component__["a" /* StandingsComponent */],
+                __WEBPACK_IMPORTED_MODULE_31__pages_news_news_listing_news_listing_component__["a" /* NewsListingComponent */],
+                __WEBPACK_IMPORTED_MODULE_32__pages_matches_fixtures_add_fixture_add_fixture_component__["a" /* AddFixtureComponent */],
+                __WEBPACK_IMPORTED_MODULE_35__pages_matches_fixtures_update_fixture_update_fixture_component__["a" /* UpdateFixtureComponent */],
+                __WEBPACK_IMPORTED_MODULE_36__pages_campaigns_campaigns_component__["a" /* CampaignsComponent */],
+                __WEBPACK_IMPORTED_MODULE_37__pages_campaigns_add_campaign_add_campaign_component__["a" /* AddCampaignComponent */],
+                __WEBPACK_IMPORTED_MODULE_39__pages_competitions_manage_groups_manage_groups_component__["a" /* ManageGroupsComponent */],
+                __WEBPACK_IMPORTED_MODULE_40__pages_competitions_competition_competition_component__["a" /* CompetitionComponent */],
+                __WEBPACK_IMPORTED_MODULE_41__components_reusable_log_table_log_table_component__["a" /* LogTableComponent */],
+                __WEBPACK_IMPORTED_MODULE_42__components_reusable_group_tables_group_tables_component__["a" /* GroupTablesComponent */],
+                __WEBPACK_IMPORTED_MODULE_43__components_reusable_fixtures_listing_fixtures_listing_component__["a" /* FixturesListingComponent */]
             ],
             imports: [
                 // Imports
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_19__angular_common__["b" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_20__angular_common__["b" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_forms__["k" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* RouterModule */].forRoot(appRoutes, { enableTracing: false }),
+                __WEBPACK_IMPORTED_MODULE_3__angular_router__["d" /* RouterModule */].forRoot(appRoutes, { enableTracing: false }),
                 __WEBPACK_IMPORTED_MODULE_5_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_9__environments_environment__["a" /* environment */].firebase),
                 __WEBPACK_IMPORTED_MODULE_6_angularfire2_database__["b" /* AngularFireDatabaseModule */],
-                __WEBPACK_IMPORTED_MODULE_20_angularfire2_auth__["b" /* AngularFireAuthModule */],
+                __WEBPACK_IMPORTED_MODULE_21_angularfire2_auth__["b" /* AngularFireAuthModule */],
                 __WEBPACK_IMPORTED_MODULE_8__angular_http__["a" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_10__angular_cdk_table__["m" /* CdkTableModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["b" /* MatAutocompleteModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["c" /* MatButtonModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["d" /* MatButtonToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["e" /* MatCardModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["f" /* MatCheckboxModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["g" /* MatChipsModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["h" /* MatDatepickerModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["j" /* MatDialogModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["l" /* MatDividerModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["m" /* MatExpansionModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["n" /* MatFormFieldModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["o" /* MatGridListModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["p" /* MatIconModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["q" /* MatInputModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["r" /* MatListModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["s" /* MatMenuModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["u" /* MatPaginatorModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["v" /* MatProgressBarModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["w" /* MatProgressSpinnerModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["x" /* MatRadioModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["y" /* MatRippleModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["z" /* MatSelectModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["A" /* MatSidenavModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["B" /* MatSlideToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["C" /* MatSliderModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["E" /* MatSnackBarModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["G" /* MatSortModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["H" /* MatStepperModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["J" /* MatTableModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["K" /* MatTabsModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["L" /* MatToolbarModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["M" /* MatTooltipModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["t" /* MatNativeDateModule */]
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["b" /* MatAutocompleteModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["c" /* MatButtonModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["d" /* MatButtonToggleModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["e" /* MatCardModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["f" /* MatCheckboxModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["g" /* MatChipsModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["h" /* MatDatepickerModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["j" /* MatDialogModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["l" /* MatDividerModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["m" /* MatExpansionModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["n" /* MatFormFieldModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["o" /* MatGridListModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["p" /* MatIconModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["q" /* MatInputModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["r" /* MatListModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["s" /* MatMenuModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["u" /* MatPaginatorModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["v" /* MatProgressBarModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["w" /* MatProgressSpinnerModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["x" /* MatRadioModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["y" /* MatRippleModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["z" /* MatSelectModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["A" /* MatSidenavModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["B" /* MatSlideToggleModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["C" /* MatSliderModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["E" /* MatSnackBarModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["G" /* MatSortModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["H" /* MatStepperModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["J" /* MatTableModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["K" /* MatTabsModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["L" /* MatToolbarModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["M" /* MatTooltipModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["t" /* MatNativeDateModule */],
+                __WEBPACK_IMPORTED_MODULE_11_ngx_order_pipe__["a" /* OrderModule */]
             ],
             // Exports
             exports: [
                 __WEBPACK_IMPORTED_MODULE_10__angular_cdk_table__["m" /* CdkTableModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["b" /* MatAutocompleteModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["c" /* MatButtonModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["d" /* MatButtonToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["e" /* MatCardModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["f" /* MatCheckboxModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["g" /* MatChipsModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["h" /* MatDatepickerModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["j" /* MatDialogModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["l" /* MatDividerModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["m" /* MatExpansionModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["n" /* MatFormFieldModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["o" /* MatGridListModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["p" /* MatIconModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["q" /* MatInputModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["r" /* MatListModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["s" /* MatMenuModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["u" /* MatPaginatorModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["v" /* MatProgressBarModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["w" /* MatProgressSpinnerModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["x" /* MatRadioModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["y" /* MatRippleModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["z" /* MatSelectModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["A" /* MatSidenavModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["B" /* MatSlideToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["C" /* MatSliderModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["E" /* MatSnackBarModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["G" /* MatSortModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["H" /* MatStepperModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["J" /* MatTableModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["K" /* MatTabsModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["L" /* MatToolbarModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_material__["M" /* MatTooltipModule */]
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["b" /* MatAutocompleteModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["c" /* MatButtonModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["d" /* MatButtonToggleModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["e" /* MatCardModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["f" /* MatCheckboxModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["g" /* MatChipsModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["h" /* MatDatepickerModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["j" /* MatDialogModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["l" /* MatDividerModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["m" /* MatExpansionModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["n" /* MatFormFieldModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["o" /* MatGridListModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["p" /* MatIconModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["q" /* MatInputModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["r" /* MatListModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["s" /* MatMenuModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["u" /* MatPaginatorModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["v" /* MatProgressBarModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["w" /* MatProgressSpinnerModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["x" /* MatRadioModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["y" /* MatRippleModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["z" /* MatSelectModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["A" /* MatSidenavModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["B" /* MatSlideToggleModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["C" /* MatSliderModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["E" /* MatSnackBarModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["G" /* MatSortModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["H" /* MatStepperModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["J" /* MatTableModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["K" /* MatTabsModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["L" /* MatToolbarModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_material__["M" /* MatTooltipModule */]
             ],
             // Providers
             providers: [
-                __WEBPACK_IMPORTED_MODULE_18__providers_auth_providers_service__["a" /* AuthProvidersService */],
+                __WEBPACK_IMPORTED_MODULE_19__providers_auth_providers_service__["a" /* AuthProvidersService */],
                 __WEBPACK_IMPORTED_MODULE_7_angularfire2_firestore__["a" /* AngularFirestore */],
-                __WEBPACK_IMPORTED_MODULE_23__providers_competitions_competition_providers_service__["a" /* CompetitionProvidersService */],
-                __WEBPACK_IMPORTED_MODULE_25__providers_dialogs_confirm_dialog_service__["a" /* ConfirmDialogService */],
-                __WEBPACK_IMPORTED_MODULE_28__providers_clubs_clubs_providers_service__["a" /* ClubsProvidersService */],
-                __WEBPACK_IMPORTED_MODULE_33__providers_fixtures_fixtures_providers_service__["a" /* FixturesProvidersService */],
-                __WEBPACK_IMPORTED_MODULE_37__providers_campains_campaigns_service__["a" /* CampaignsService */]
+                __WEBPACK_IMPORTED_MODULE_24__providers_competitions_competition_providers_service__["a" /* CompetitionProvidersService */],
+                __WEBPACK_IMPORTED_MODULE_26__providers_dialogs_confirm_dialog_service__["a" /* ConfirmDialogService */],
+                __WEBPACK_IMPORTED_MODULE_29__providers_clubs_clubs_providers_service__["a" /* ClubsProvidersService */],
+                __WEBPACK_IMPORTED_MODULE_34__providers_fixtures_fixtures_providers_service__["a" /* FixturesProvidersService */],
+                __WEBPACK_IMPORTED_MODULE_38__providers_campains_campaigns_service__["a" /* CampaignsService */]
             ],
             // Entry components
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_21__pages_competitions_competition_listings_competition_listings_component__["a" /* CompetitionListingsComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__pages_competitions_add_competition_add_competitions_component__["a" /* AddCompetitionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__components_confirm_dialog_confirm_dialog_component__["a" /* ConfirmDialogComponent */],
-                __WEBPACK_IMPORTED_MODULE_27__pages_clubs_add_club_add_club_component__["a" /* AddClubComponent */],
-                __WEBPACK_IMPORTED_MODULE_31__pages_matches_fixtures_add_fixture_add_fixture_component__["a" /* AddFixtureComponent */],
-                __WEBPACK_IMPORTED_MODULE_34__pages_matches_fixtures_update_fixture_update_fixture_component__["a" /* UpdateFixtureComponent */],
-                __WEBPACK_IMPORTED_MODULE_36__pages_campaigns_add_campaign_add_campaign_component__["a" /* AddCampaignComponent */],
-                __WEBPACK_IMPORTED_MODULE_38__pages_competitions_manage_groups_manage_groups_component__["a" /* ManageGroupsComponent */]
+                __WEBPACK_IMPORTED_MODULE_22__pages_competitions_competition_listings_competition_listings_component__["a" /* CompetitionListingsComponent */],
+                __WEBPACK_IMPORTED_MODULE_27__pages_competitions_add_competition_add_competitions_component__["a" /* AddCompetitionsComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__components_confirm_dialog_confirm_dialog_component__["a" /* ConfirmDialogComponent */],
+                __WEBPACK_IMPORTED_MODULE_28__pages_clubs_add_club_add_club_component__["a" /* AddClubComponent */],
+                __WEBPACK_IMPORTED_MODULE_32__pages_matches_fixtures_add_fixture_add_fixture_component__["a" /* AddFixtureComponent */],
+                __WEBPACK_IMPORTED_MODULE_35__pages_matches_fixtures_update_fixture_update_fixture_component__["a" /* UpdateFixtureComponent */],
+                __WEBPACK_IMPORTED_MODULE_37__pages_campaigns_add_campaign_add_campaign_component__["a" /* AddCampaignComponent */],
+                __WEBPACK_IMPORTED_MODULE_39__pages_competitions_manage_groups_manage_groups_component__["a" /* ManageGroupsComponent */]
             ],
             // Bootstrap
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -355,7 +371,7 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/components/confirm-dialog/confirm-dialog.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<h1 mat-dialog-title>Confirm Delete</h1>\n<div mat-dialog-content>\n  <p>Are you sure you want to delete <strong>{{ data.name }}</strong> {{ data.type }}</p>\n</div>\n\n\n<div mat-dialog-actions class=\"uk-align-right\">\n  <button mat-button (click)=\"onCancel()\">NO</button>\n  <button mat-button (click)=\"onConfirm()\" color=\"primary\" cdkFocusInitial>YES</button>\n</div>"
+module.exports = "\r\n<h1 mat-dialog-title>Confirm Delete</h1>\r\n<div mat-dialog-content>\r\n  <p>Are you sure you want to delete <strong>{{ data.name }}</strong> {{ data.type }}</p>\r\n</div>\r\n\r\n\r\n<div mat-dialog-actions class=\"uk-align-right\">\r\n  <button mat-button (click)=\"onCancel()\">NO</button>\r\n  <button mat-button (click)=\"onConfirm()\" color=\"primary\" cdkFocusInitial>YES</button>\r\n</div>"
 
 /***/ }),
 
@@ -419,7 +435,7 @@ var ConfirmDialogComponent = /** @class */ (function () {
 /***/ "./src/app/components/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\" class=\"example-toolbar\" *ngIf=\"currentUser?.uid\">\n    <mat-toolbar-row>\n        <button mat-icon-button (click)=\"snav.toggle()\"><mat-icon>menu</mat-icon></button>\n        <span class=\"example-spacer\"></span>\n        <mat-icon class=\"example-icon\">account_circle</mat-icon>\n        <button mat-button [matMenuTriggerFor]=\"menu\">Eric Ratshili</button>\n        <mat-menu #menu=\"matMenu\">\n            <button mat-menu-item>Item 1</button>\n            <button mat-menu-item (click)=\"logout()\">Logout</button>\n        </mat-menu>\n    </mat-toolbar-row>\n</mat-toolbar>"
+module.exports = "<mat-toolbar color=\"primary\" class=\"example-toolbar\" *ngIf=\"currentUser?.uid\">\r\n    <mat-toolbar-row>\r\n        <button mat-icon-button (click)=\"snav.toggle()\"><mat-icon>menu</mat-icon></button>\r\n        <span class=\"example-spacer\"></span>\r\n        <mat-icon class=\"example-icon\">account_circle</mat-icon>\r\n        <button mat-button [matMenuTriggerFor]=\"menu\">Eric Ratshili</button>\r\n        <mat-menu #menu=\"matMenu\">\r\n            <button mat-menu-item>Item 1</button>\r\n            <button mat-menu-item (click)=\"logout()\">Logout</button>\r\n        </mat-menu>\r\n    </mat-toolbar-row>\r\n</mat-toolbar>"
 
 /***/ }),
 
@@ -473,9 +489,255 @@ var NavbarComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/components/navbar/navbar.component.html"),
             styles: [__webpack_require__("./src/app/components/navbar/navbar.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_providers_service__["a" /* AuthProvidersService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_providers_service__["a" /* AuthProvidersService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */]])
     ], NavbarComponent);
     return NavbarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/fixtures-listing/fixtures-listing.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngIf=\"fixturesData?.length > 0 && !loading\">\n    <mat-card class=\"fixture-card\" *ngFor=\"let item of fixturesData\">\n        <table class=\"uk-table uk-table-divider\">\n            <tbody>\n                <button *ngIf=\"mobileQuery.matches\" class=\"uk-position-top-right\"  mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\n                <tr style=\"border: none\" *ngIf=\"mobileQuery.matches\">\n                    <td style=\"padding: 10px 0;\" colspan=\"3\">{{ item.date | date: 'mediumDate' }}, {{ item.kickOffTime ? item.kickOffTime : 'TBA' }}</td>\n                <tr style=\"border: none\">\n                    <td class=\"uk-padding-remove\" width=\"230\" class=\"uk-text-right@m\">\n                        <i matPrefix mat-list-icon class=\"club-logo-placeholder fas fa-shield-alt\"></i>\n                        <p>{{ getClubDetails(item.homeClub) }}</p>\n                    </td>\n                    <td class=\"fixture-vs\" width=\"80\">\n                        <span class=\"uk-label fixture-vs-score\" *ngIf=\"item.status == 'PLAYED'\">\n                            <span>FT</span> <br><span>{{ item.homeScore }} - {{ item.awayScore }}</span> <br>\n                            <span *ngIf=\"item.isDecidedOnPenalties\">Pen {{ item.homePenaltyScore }} - {{ item.awayPenaltyScore }}</span>\n                        </span>\n                        <span class=\"uk-label fixture-vs-score\" *ngIf=\"item.status == 'UPCOMING'\">vs</span>\n                    </td>\n                    <td class=\"uk-padding-remove fixture-away-club\" width=\"230\">\n                        <i matPrefix mat-list-icon class=\"club-logo-placeholder fas fa-shield-alt\"></i>\n                        <p>{{ getClubDetails(item.awayClub) }}</p>\n                    </td>\n                    <td class=\"uk-padding-remove\" [hidden]=\"mobileQuery.matches\" width=\"200\" [ngClass]=\"{'uk-text-muted': !item.vanue}\">{{ item.vanue ? item.vanue : 'TBA' }}</td>\n                    <td class=\"uk-padding-remove\" [hidden]=\"true\" width=\"70\">SS4</td>\n                    <td class=\"uk-padding-remove uk-text-center\" [hidden]=\"mobileQuery.matches\" [ngClass]=\"{'uk-text-muted': !item.kickOffTime}\" width=\"120\">{{ item.kickOffTime ? item.kickOffTime : 'TBA' }}</td>\n                    <td [hidden]=\"mobileQuery.matches\" width=\"80\" class=\"uk-text-right uk-padding-remove\">\n                        <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\n                        <mat-menu #menu=\"matMenu\">\n                            <button mat-menu-item (click)=\"editFixture(item)\">\n                                <mat-icon>mode_edit</mat-icon>\n                                <span>Edit</span>\n                            </button>\n                            <button mat-menu-item (click)=\"updateResults(item)\">\n                                <mat-icon>code</mat-icon>\n                                <span>Update results</span>\n                            </button>\n                            <button mat-menu-item (click)=\"deleteFixture(item)\">\n                                <mat-icon>delete</mat-icon>\n                                <span>Delete</span>\n                            </button>\n                        </mat-menu>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </mat-card>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/fixtures-listing/fixtures-listing.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ".fixture-card {\n  margin: 10px 1px; }\n  @media (min-width: 769px) {\n    .fixture-card {\n      padding: 15px 0; } }\n  @media (max-width: 768px) {\n    .fixture-card {\n      padding: 15px 15px; } }\n  .fixture-card .uk-table td {\n    vertical-align: middle;\n    padding: 0; }\n  .fixture-card .uk-table td.fixture-vs {\n      padding: 10px;\n      text-align: center; }\n  .fixture-card .uk-table td.fixture-vs span {\n        text-align: center;\n        margin: auto; }\n  @media (min-width: 769px) {\n          .fixture-card .uk-table td.fixture-vs span {\n            width: 70%; } }\n  @media (max-width: 768px) {\n          .fixture-card .uk-table td.fixture-vs span {\n            width: auto; } }\n  .fixture-card .club-logo-placeholder {\n    font-size: 2rem; }\n  @media (max-width: 768px) {\n    .fixture-card .fixture-away-club {\n      text-align: right; } }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/fixtures-listing/fixtures-listing.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FixturesListingComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_fixtures_fixtures_providers_service__ = __webpack_require__("./src/app/providers/fixtures/fixtures-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_layout__ = __webpack_require__("./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_matches_fixtures_add_fixture_add_fixture_component__ = __webpack_require__("./src/app/pages/matches/fixtures/add-fixture/add-fixture.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_matches_fixtures_update_fixture_update_fixture_component__ = __webpack_require__("./src/app/pages/matches/fixtures/update-fixture/update-fixture.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var FixturesListingComponent = /** @class */ (function () {
+    function FixturesListingComponent(fixturesService, changeDetectorRef, media, dialog) {
+        this.fixturesService = fixturesService;
+        this.dialog = dialog;
+        this.type = 'fixture';
+        this.mobileQuery = media.matchMedia('(max-width: 767px)');
+        this._mobileQueryListener = function () { return changeDetectorRef.detectChanges(); };
+        this.mobileQuery.addListener(this._mobileQueryListener);
+    }
+    FixturesListingComponent.prototype.ngOnInit = function () {
+        this.getFixtures(this.competitionID);
+        console.log('competitionType', this.competitionType);
+    };
+    FixturesListingComponent.prototype.getFixtures = function (id) {
+        var _this = this;
+        this.fixturesService.getFixturesByCompetitionID(id).subscribe(function (data) {
+            _this.fixturesData = data;
+        });
+    };
+    FixturesListingComponent.prototype.getClubDetails = function (id) {
+        if (this.clubsData) {
+            var club = this.clubsData.find(function (item) { return item.id === id; });
+            return club.name;
+        }
+    };
+    // ACTIONS
+    FixturesListingComponent.prototype.openAddFixture = function (event, id) {
+        this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__pages_matches_fixtures_add_fixture_add_fixture_component__["a" /* AddFixtureComponent */], {
+            width: '700px',
+            data: { competition: id }
+        });
+    };
+    FixturesListingComponent.prototype.editFixture = function (item) {
+        this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__pages_matches_fixtures_add_fixture_add_fixture_component__["a" /* AddFixtureComponent */], {
+            width: '700px',
+            data: item
+        });
+    };
+    FixturesListingComponent.prototype.updateResults = function (item) {
+        // add results
+        this.dialog.open(__WEBPACK_IMPORTED_MODULE_5__pages_matches_fixtures_update_fixture_update_fixture_component__["a" /* UpdateFixtureComponent */], {
+            width: '700px',
+            data: item
+        });
+    };
+    FixturesListingComponent.prototype.deleteFixture = function (item) {
+        this.fixturesService.deleteFixture(this.type, item);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        __metadata("design:type", Object)
+    ], FixturesListingComponent.prototype, "competitionID", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        __metadata("design:type", Array)
+    ], FixturesListingComponent.prototype, "clubsData", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        __metadata("design:type", Object)
+    ], FixturesListingComponent.prototype, "competitionType", void 0);
+    FixturesListingComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-fixtures-listing',
+            template: __webpack_require__("./src/app/components/reusable/fixtures-listing/fixtures-listing.component.html"),
+            styles: [__webpack_require__("./src/app/components/reusable/fixtures-listing/fixtures-listing.component.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_fixtures_fixtures_providers_service__["a" /* FixturesProvidersService */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_cdk_layout__["d" /* MediaMatcher */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_material__["i" /* MatDialog */]])
+    ], FixturesListingComponent);
+    return FixturesListingComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/group-tables/group-tables.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div uk-grid class=\"uk-child-width-1-2@m\">\n  <div *ngFor=\"let item of [1,2,3,4,5]\" class=\"uk-margin-medium-top\">\n    <h5>Group A</h5>\n    <table class=\"uk-table uk-table-striped\">\n      <thead>\n          <tr>\n              <th>Pos.</th>\n              <th>Team</th>\n              <th class=\"uk-text-center\">MP</th>\n              <th class=\"uk-text-center\">W</th>\n              <th class=\"uk-text-center\">D</th>\n              <th class=\"uk-text-center\">L</th>\n              <th class=\"uk-text-center\">GF</th>\n              <th class=\"uk-text-center\">GA</th>\n              <th class=\"uk-text-center\">GD</th>\n              <th class=\"uk-text-center\">Pts</th>\n          </tr>\n      </thead>\n      <tbody>\n          <tr *ngFor=\"let item of [1,2,3,4];let i = index\">\n              <td>{{ i + 1 }}</td>\n              <td>{{ item.name }}</td>\n              <td class=\"uk-text-center\">0</td>\n              <td class=\"uk-text-center\">0</td>\n              <td class=\"uk-text-center\">0</td>\n              <td class=\"uk-text-center\">0</td>\n              <td class=\"uk-text-center\">0</td>\n              <td class=\"uk-text-center\">0</td>\n              <td class=\"uk-text-center\">0</td>\n              <td class=\"uk-text-center\">0</td>\n          </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/group-tables/group-tables.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/group-tables/group-tables.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GroupTablesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GroupTablesComponent = /** @class */ (function () {
+    function GroupTablesComponent() {
+    }
+    GroupTablesComponent.prototype.ngOnInit = function () {
+    };
+    GroupTablesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-group-tables',
+            template: __webpack_require__("./src/app/components/reusable/group-tables/group-tables.component.html"),
+            styles: [__webpack_require__("./src/app/components/reusable/group-tables/group-tables.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GroupTablesComponent);
+    return GroupTablesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/log-table/log-table.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<table class=\"uk-table uk-table-striped\">\n  <thead>\n      <tr>\n          <th>Pos.</th>\n          <th>Team</th>\n          <th class=\"uk-text-center\">MP</th>\n          <th class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">W</th>\n          <th class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">D</th>\n          <th class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">L</th>\n          <th class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">GF</th>\n          <th class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">GA</th>\n          <th class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">GD</th>\n          <th class=\"uk-text-center\">Pts</th>\n      </tr>\n  </thead>\n  <tbody>\n      <tr *ngFor=\"let item of clubsData | orderBy: 'name';let i = index;\">\n          <td>{{ i + 1 }}</td>\n          <td>{{ item.name }}</td>\n          <td class=\"uk-text-center\">0</td>\n          <td class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">0</td>\n          <td class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">0</td>\n          <td class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">0</td>\n          <td class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">0</td>\n          <td class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">0</td>\n          <td class=\"uk-text-center\" [hidden]=\"mobileQuery.matches\">0</td>\n          <td class=\"uk-text-center\">0</td>\n      </tr>\n  </tbody>\n</table>"
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/log-table/log-table.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/reusable/log-table/log-table.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogTableComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_fixtures_fixtures_providers_service__ = __webpack_require__("./src/app/providers/fixtures/fixtures-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_layout__ = __webpack_require__("./node_modules/@angular/cdk/esm5/layout.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var LogTableComponent = /** @class */ (function () {
+    function LogTableComponent(fixturesService, media, changeDetectorRef) {
+        this.fixturesService = fixturesService;
+        this.mobileQuery = media.matchMedia('(max-width: 767px)');
+        this._mobileQueryListener = function () { return changeDetectorRef.detectChanges(); };
+        this.mobileQuery.addListener(this._mobileQueryListener);
+    }
+    LogTableComponent.prototype.ngOnInit = function () {
+        this.getCompetitionFixtures(this.competition.id);
+    };
+    LogTableComponent.prototype.getCompetitionFixtures = function (id) {
+        this.fixturesService.getFixturesByCompetitionID(id).subscribe(function (data) {
+            console.log(data);
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        __metadata("design:type", Object)
+    ], LogTableComponent.prototype, "competition", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        __metadata("design:type", Array)
+    ], LogTableComponent.prototype, "clubsData", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+        __metadata("design:type", Object)
+    ], LogTableComponent.prototype, "competitionType", void 0);
+    LogTableComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-log-table',
+            template: __webpack_require__("./src/app/components/reusable/log-table/log-table.component.html"),
+            styles: [__webpack_require__("./src/app/components/reusable/log-table/log-table.component.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_fixtures_fixtures_providers_service__["a" /* FixturesProvidersService */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_cdk_layout__["d" /* MediaMatcher */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */]])
+    ], LogTableComponent);
+    return LogTableComponent;
 }());
 
 
@@ -485,7 +747,7 @@ var NavbarComponent = /** @class */ (function () {
 /***/ "./src/app/components/side-menu/side-menu.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav\n[hidden]=\"!currentUser?.uid\"\n#snav [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\n[fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\n    <mat-nav-list>\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\"fixtures\">Fixtures</a>\n    </mat-nav-list>\n\n    <mat-nav-list>\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\"standings\">Standings</a>\n    </mat-nav-list>\n\n    <mat-nav-list>\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\"clubs\">Clubs</a>\n    </mat-nav-list>\n\n    <mat-nav-list>\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\"competitions\">Competitions</a>\n    </mat-nav-list>\n\n    <mat-nav-list>\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\".\">Menu item</a>\n    </mat-nav-list>\n</mat-sidenav>"
+module.exports = "<mat-sidenav\r\n[hidden]=\"!currentUser?.uid\"\r\n#snav [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\r\n[fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\r\n    <mat-nav-list>\r\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\"fixtures\">Fixtures</a>\r\n    </mat-nav-list>\r\n\r\n    <mat-nav-list>\r\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\"standings\">Standings</a>\r\n    </mat-nav-list>\r\n\r\n    <mat-nav-list>\r\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\"clubs\">Clubs</a>\r\n    </mat-nav-list>\r\n\r\n    <mat-nav-list>\r\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\"competitions\">Competitions</a>\r\n    </mat-nav-list>\r\n\r\n    <mat-nav-list>\r\n        <a (click)=\"snav.toggle()\" mat-list-item routerLink=\".\">Menu item</a>\r\n    </mat-nav-list>\r\n</mat-sidenav>"
 
 /***/ }),
 
@@ -535,7 +797,7 @@ var SideMenuComponent = /** @class */ (function () {
 /***/ "./src/app/pages/auth/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- \n  <div class=\"uk-section-large login-container\" style=\"display: block;\">\n    <div class=\"uk-container uk-container-large\">\n        <div uk-grid class=\"uk-child-width-1-1@s uk-child-width-2-3@l\">\n            <div class=\"uk-width-1-1@s uk-width-1-5@m uk-width-1-3@xl\"></div>\n            <div class=\"uk-width-1-1@s uk-width-3-5@m uk-width-1-3@xl\">\n                <div class=\"uk-card uk-card-secondary\">\n                    <div class=\"uk-card-body\">\n                        <h2 class=\"uk-text-center\">Admin login</h2>\n                        <form>\n                            <fieldset class=\"uk-fieldset\">\n\n                                <div class=\"uk-margin\">\n                                    <div class=\"uk-position-relative\">\n                                      <span class=\"uk-form-icon\" uk-icon=\"icon: user\"></span>\n                                      <input class=\"uk-input\" name=\"email\" [(ngModel)]=\"email\" type=\"email\" placeholder=\"Email\" required>\n                                    </div>\n                                </div>\n\n                                <div class=\"uk-margin\">\n                                    <div class=\"uk-position-relative\">\n                                          <span class=\"uk-form-icon\" uk-icon=\"icon: lock\"></span>\n                                          <input class=\"uk-input\" name=\"password\" [(ngModel)]=\"password\" type=\"password\" placeholder=\"Password\" required>\n                                    </div>\n                                </div>\n\n                                <div class=\"uk-margin\">\n                                    <a href=\"#\">Forgot your password?</a>\n                                </div>\n\n                                <div class=\"uk-margin\">\n                                    <button (click)=\"loginUser()\" [disabled]=\"loading\" type=\"button\" class=\"uk-button uk-button-primary uk-button-large uk-width-1-1\">\n                                        <span class=\"ion-forward\"></span>&nbsp;  {{ loading ? 'Please wait...' : 'Login' }}\n                                    </button>\n                                </div>\n                            </fieldset>\n                        </form>\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-width-1-1@s uk-width-1-5@l uk-width-1-3@xl\"></div>\n        </div>\n    </div>\n</div> -->\n\n<div class=\"has-background\">\n    <mat-card class=\"login-card uk-position-center\">\n        <h4 class=\"uk-text-center\">ADMIN LOGIN</h4>\n            <mat-form-field class=\"uk-width-1-1@s\">\n                <input matInput name=\"email\" [(ngModel)]=\"email\" type=\"email\" placeholder=\"Username\">\n            </mat-form-field>\n            <mat-form-field class=\"uk-width-1-1@s\">\n                <input type=\"password\" name=\"password\" [(ngModel)]=\"password\" matInput placeholder=\"Password\">\n            </mat-form-field>\n\n            <button class=\"uk-width-1-1@s\" mat-raised-button (click)=\"loginUser()\" [disabled]=\"loading\" color=\"primary\">\n                <i class=\"fa fa-circle-o-notch fa-spin\" *ngIf=\"loading\"></i> &nbsp;\n                {{ loading ? 'Please wait...' : 'Login' }}\n            </button>\n    </mat-card>\n</div>"
+module.exports = "<!-- \r\n  <div class=\"uk-section-large login-container\" style=\"display: block;\">\r\n    <div class=\"uk-container uk-container-large\">\r\n        <div uk-grid class=\"uk-child-width-1-1@s uk-child-width-2-3@l\">\r\n            <div class=\"uk-width-1-1@s uk-width-1-5@m uk-width-1-3@xl\"></div>\r\n            <div class=\"uk-width-1-1@s uk-width-3-5@m uk-width-1-3@xl\">\r\n                <div class=\"uk-card uk-card-secondary\">\r\n                    <div class=\"uk-card-body\">\r\n                        <h2 class=\"uk-text-center\">Admin login</h2>\r\n                        <form>\r\n                            <fieldset class=\"uk-fieldset\">\r\n\r\n                                <div class=\"uk-margin\">\r\n                                    <div class=\"uk-position-relative\">\r\n                                      <span class=\"uk-form-icon\" uk-icon=\"icon: user\"></span>\r\n                                      <input class=\"uk-input\" name=\"email\" [(ngModel)]=\"email\" type=\"email\" placeholder=\"Email\" required>\r\n                                    </div>\r\n                                </div>\r\n\r\n                                <div class=\"uk-margin\">\r\n                                    <div class=\"uk-position-relative\">\r\n                                          <span class=\"uk-form-icon\" uk-icon=\"icon: lock\"></span>\r\n                                          <input class=\"uk-input\" name=\"password\" [(ngModel)]=\"password\" type=\"password\" placeholder=\"Password\" required>\r\n                                    </div>\r\n                                </div>\r\n\r\n                                <div class=\"uk-margin\">\r\n                                    <a href=\"#\">Forgot your password?</a>\r\n                                </div>\r\n\r\n                                <div class=\"uk-margin\">\r\n                                    <button (click)=\"loginUser()\" [disabled]=\"loading\" type=\"button\" class=\"uk-button uk-button-primary uk-button-large uk-width-1-1\">\r\n                                        <span class=\"ion-forward\"></span>&nbsp;  {{ loading ? 'Please wait...' : 'Login' }}\r\n                                    </button>\r\n                                </div>\r\n                            </fieldset>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"uk-width-1-1@s uk-width-1-5@l uk-width-1-3@xl\"></div>\r\n        </div>\r\n    </div>\r\n</div> -->\r\n\r\n<div class=\"has-background\">\r\n    <mat-card class=\"login-card uk-position-center\">\r\n        <h4 class=\"uk-text-center\">ADMIN LOGIN</h4>\r\n            <mat-form-field class=\"uk-width-1-1@s\">\r\n                <input matInput name=\"email\" [(ngModel)]=\"email\" type=\"email\" placeholder=\"Username\">\r\n            </mat-form-field>\r\n            <mat-form-field class=\"uk-width-1-1@s\">\r\n                <input type=\"password\" name=\"password\" [(ngModel)]=\"password\" matInput placeholder=\"Password\">\r\n            </mat-form-field>\r\n\r\n            <button class=\"uk-width-1-1@s\" mat-raised-button (click)=\"loginUser()\" [disabled]=\"loading\" color=\"primary\">\r\n                <i class=\"fa fa-circle-o-notch fa-spin\" *ngIf=\"loading\"></i> &nbsp;\r\n                {{ loading ? 'Please wait...' : 'Login' }}\r\n            </button>\r\n    </mat-card>\r\n</div>"
 
 /***/ }),
 
@@ -609,7 +871,7 @@ var LoginComponent = /** @class */ (function () {
             styles: [__webpack_require__("./src/app/pages/auth/login/login.component.scss")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_auth_providers_service__["a" /* AuthProvidersService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */],
             __WEBPACK_IMPORTED_MODULE_3__angular_material__["D" /* MatSnackBar */]])
     ], LoginComponent);
     return LoginComponent;
@@ -622,7 +884,7 @@ var LoginComponent = /** @class */ (function () {
 /***/ "./src/app/pages/campaigns/add-campaign/add-campaign.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>{{ data?.id ? 'Edit Campaign' : 'Add Campaign' }}</h1>\n<form [formGroup]=\"form\" class=\"add-competition-form\">\n  <div mat-dialog-content>\n    <div uk-grid class=\"uk-child-width-1-2@m\">\n      <div>\n        <mat-form-field style=\"width: 100%\">\n            <mat-select #startYear formControlName=\"startYear\"\n              placeholder=\"Start year\"\n              (change)=\"onYearChange(startYear.value, endYear.value);endYear.value = ''\"\n              required>\n              <mat-option *ngFor=\"let item of yearsData\" [value]=\"item\">\n                {{ item }}\n              </mat-option>\n            </mat-select>\n        </mat-form-field>\n      </div>\n      <div>\n          <mat-form-field style=\"width: 100%\">\n              <mat-select #endYear formControlName=\"endYear\"\n                placeholder=\"End year\"\n                (change)=\"onYearChange(startYear.value, endYear.value)\"\n                required>\n                <mat-option *ngFor=\"let item of yearsData\" [value]=\"item\" [disabled]=\"item < startYear.value\">\n                  {{ item }}\n                </mat-option>\n              </mat-select>\n          </mat-form-field>\n      </div>\n    </div>\n    \n    <mat-form-field style=\"width: 100%\">\n        <input matInput formControlName=\"campaign\" placeholder=\"Campaign\" required>\n      </mat-form-field>\n    </div>\n\n    <div mat-dialog-actions class=\"uk-align-right\">\n      <button mat-button (click)=\"onCancel()\">Cancel</button>\n      <button mat-button (click)=\"addCampaign()\" [disabled]=\"!form.valid\" mat-raised-button color=\"primary\" cdkFocusInitial>Save</button>\n    </div>\n</form>\n"
+module.exports = "<h1 mat-dialog-title>{{ data?.id ? 'Edit Campaign' : 'Add Campaign' }}</h1>\r\n<form [formGroup]=\"form\" class=\"add-competition-form\">\r\n  <div mat-dialog-content>\r\n    <div uk-grid class=\"uk-child-width-1-2@m\">\r\n      <div>\r\n        <mat-form-field style=\"width: 100%\">\r\n            <mat-select #startYear formControlName=\"startYear\"\r\n              placeholder=\"Start year\"\r\n              (change)=\"onYearChange(startYear.value, endYear.value);endYear.value = ''\"\r\n              required>\r\n              <mat-option *ngFor=\"let item of yearsData\" [value]=\"item\">\r\n                {{ item }}\r\n              </mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n      </div>\r\n      <div>\r\n          <mat-form-field style=\"width: 100%\">\r\n              <mat-select #endYear formControlName=\"endYear\"\r\n                placeholder=\"End year\"\r\n                (change)=\"onYearChange(startYear.value, endYear.value)\"\r\n                required>\r\n                <mat-option *ngFor=\"let item of yearsData\" [value]=\"item\" [disabled]=\"item < startYear.value\">\r\n                  {{ item }}\r\n                </mat-option>\r\n              </mat-select>\r\n          </mat-form-field>\r\n      </div>\r\n    </div>\r\n    \r\n    <mat-form-field style=\"width: 100%\">\r\n        <input matInput formControlName=\"campaign\" placeholder=\"Campaign\" required>\r\n      </mat-form-field>\r\n    </div>\r\n\r\n    <div mat-dialog-actions class=\"uk-align-right\">\r\n      <button mat-button (click)=\"onCancel()\">Cancel</button>\r\n      <button mat-button (click)=\"addCampaign()\" [disabled]=\"!form.valid\" mat-raised-button color=\"primary\" cdkFocusInitial>Save</button>\r\n    </div>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -732,7 +994,7 @@ var AddCampaignComponent = /** @class */ (function () {
 /***/ "./src/app/pages/campaigns/campaigns.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"uk-section uk-section-muted uk-padding\">\n    <div uk-grid class=\"uk-flex-middle\">\n        <div class=\"uk-width-expand@m uk-width-1-1@s\">\n            <h1 class=\"uk-margin-remove\">Campaigns</h1>\n            <p class=\"uk-margin-remove\">Manage your campaigns</p>\n        </div>\n    </div>\n</div>\n\n\n<hr class=\"uk-margin-remove\">\n<mat-card *ngIf=\"!loading\" class=\"listing-container\">\n    <mat-card-content>\n      <mat-table #table [dataSource]=\"dataSource\" class=\"grid-listing-table\" [hidden]=\"loading\" style=\"margin-bottom: 100px;\">\n\n          <!-- Position Column -->\n          <ng-container matColumnDef=\"campaign\">\n            <mat-header-cell *matHeaderCellDef> Campaign </mat-header-cell>\n            <mat-cell *matCellDef=\"let element\">\n              <mat-list>\n                  <mat-list-item>\n                    <mat-icon mat-list-icon>date_range</mat-icon>\n                    <h5 mat-line>{{ element.campaign }} </h5>\n                    <span [hidden]=\"!mobileQuery.matches\" class=\"uk-text-break uk-text-muted\" mat-line>{{ element.startYear }} - {{ element.endYear }}</span>\n                  </mat-list-item>\n                </mat-list>\n            </mat-cell>\n          </ng-container>\n\n          <ng-container matColumnDef=\"startYear\">\n              <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef> Start year </mat-header-cell>\n              <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\">\n                {{ element.startYear }}\n              </mat-cell>\n          </ng-container>\n\n          <ng-container matColumnDef=\"endYear\">\n              <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef> End year </mat-header-cell>\n              <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\">\n                {{ element.endYear }}\n              </mat-cell>\n          </ng-container>\n\n          <ng-container matColumnDef=\"actions\">\n            <mat-header-cell *matHeaderCellDef></mat-header-cell>\n            <mat-cell *matCellDef=\"let element\" class=\"uk-text-right\">\n              <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\n              <mat-menu #menu=\"matMenu\">\n                <!-- <button mat-menu-item (click)=\"editCampaing(element)\">\n                  <mat-icon>check_circle</mat-icon>\n                  <span>Make as default</span>\n                </button> -->\n                <button mat-menu-item (click)=\"editCampaing(element)\">\n                  <mat-icon>edit</mat-icon>\n                  <span>Edit</span>\n                </button>\n                <button mat-menu-item (click)=\"deleteCompaign(element)\">\n                  <mat-icon>delete</mat-icon>\n                  <span>Delete</span>\n                </button>\n              </mat-menu>\n            </mat-cell>\n          </ng-container>\n\n          <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n          <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n      </mat-table>\n    </mat-card-content>\n  </mat-card>\n\n<button class=\"floating-add-button\" (click)=\"openAddCampaign()\" mat-fab color=\"primary\"  matTooltip=\"Add new fixture\"[matTooltipPosition]=\"'left'\">\n    <mat-icon aria-label=\"Add new fixture\">add</mat-icon>\n</button>\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>\n\n"
+module.exports = "<div class=\"uk-section uk-section-muted uk-padding\">\r\n    <div uk-grid class=\"uk-flex-middle\">\r\n        <div class=\"uk-width-expand@m uk-width-1-1@s\">\r\n            <h1 class=\"uk-margin-remove\">Campaigns</h1>\r\n            <p class=\"uk-margin-remove\">Manage your campaigns</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<hr class=\"uk-margin-remove\">\r\n<mat-card *ngIf=\"!loading\" class=\"listing-container\">\r\n    <mat-card-content>\r\n      <mat-table #table [dataSource]=\"dataSource\" class=\"grid-listing-table\" [hidden]=\"loading\" style=\"margin-bottom: 100px;\">\r\n\r\n          <!-- Position Column -->\r\n          <ng-container matColumnDef=\"campaign\">\r\n            <mat-header-cell *matHeaderCellDef> Campaign </mat-header-cell>\r\n            <mat-cell *matCellDef=\"let element\">\r\n              <mat-list>\r\n                  <mat-list-item>\r\n                    <mat-icon mat-list-icon>date_range</mat-icon>\r\n                    <h5 mat-line>{{ element.campaign }} </h5>\r\n                    <span [hidden]=\"!mobileQuery.matches\" class=\"uk-text-break uk-text-muted\" mat-line>{{ element.startYear }} - {{ element.endYear }}</span>\r\n                  </mat-list-item>\r\n                </mat-list>\r\n            </mat-cell>\r\n          </ng-container>\r\n\r\n          <ng-container matColumnDef=\"startYear\">\r\n              <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef> Start year </mat-header-cell>\r\n              <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\">\r\n                {{ element.startYear }}\r\n              </mat-cell>\r\n          </ng-container>\r\n\r\n          <ng-container matColumnDef=\"endYear\">\r\n              <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef> End year </mat-header-cell>\r\n              <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\">\r\n                {{ element.endYear }}\r\n              </mat-cell>\r\n          </ng-container>\r\n\r\n          <ng-container matColumnDef=\"actions\">\r\n            <mat-header-cell *matHeaderCellDef></mat-header-cell>\r\n            <mat-cell *matCellDef=\"let element\" class=\"uk-text-right\">\r\n              <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\r\n              <mat-menu #menu=\"matMenu\">\r\n                <!-- <button mat-menu-item (click)=\"editCampaing(element)\">\r\n                  <mat-icon>check_circle</mat-icon>\r\n                  <span>Make as default</span>\r\n                </button> -->\r\n                <button mat-menu-item (click)=\"editCampaing(element)\">\r\n                  <mat-icon>edit</mat-icon>\r\n                  <span>Edit</span>\r\n                </button>\r\n                <button mat-menu-item (click)=\"deleteCompaign(element)\">\r\n                  <mat-icon>delete</mat-icon>\r\n                  <span>Delete</span>\r\n                </button>\r\n              </mat-menu>\r\n            </mat-cell>\r\n          </ng-container>\r\n\r\n          <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n          <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n      </mat-table>\r\n    </mat-card-content>\r\n  </mat-card>\r\n\r\n<button class=\"floating-add-button\" (click)=\"openAddCampaign()\" mat-fab color=\"primary\"  matTooltip=\"Add new fixture\"[matTooltipPosition]=\"'left'\">\r\n    <mat-icon aria-label=\"Add new fixture\">add</mat-icon>\r\n</button>\r\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>\r\n\r\n"
 
 /***/ }),
 
@@ -755,6 +1017,7 @@ module.exports = ""
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_firestore__ = __webpack_require__("./node_modules/angularfire2/firestore/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__add_campaign_add_campaign_component__ = __webpack_require__("./src/app/pages/campaigns/add-campaign/add-campaign.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ngx_order_pipe__ = __webpack_require__("./node_modules/ngx-order-pipe/ngx-order-pipe.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -771,13 +1034,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var CampaignsComponent = /** @class */ (function () {
-    function CampaignsComponent(dialog, afs, af, changeDetectorRef, campaignsService, media) {
+    function CampaignsComponent(dialog, afs, af, changeDetectorRef, campaignsService, media, orderPipe) {
         var _this = this;
         this.dialog = dialog;
         this.afs = afs;
         this.af = af;
         this.campaignsService = campaignsService;
+        this.orderPipe = orderPipe;
         this.displayedColumns = ['campaign', 'startYear', 'endYear', 'actions'];
         this.type = 'campaign';
         this.dataSource = new __WEBPACK_IMPORTED_MODULE_3__angular_material__["I" /* MatTableDataSource */](this.campaignsData);
@@ -786,7 +1051,7 @@ var CampaignsComponent = /** @class */ (function () {
         this.mobileQuery.addListener(this._mobileQueryListener);
         this.loading = true;
         campaignsService.getCampaigns().valueChanges().subscribe(function (data) {
-            _this.campaignsData = data;
+            _this.campaignsData = orderPipe.transform(data, 'endYear', true);
             _this.dataSource = new __WEBPACK_IMPORTED_MODULE_3__angular_material__["I" /* MatTableDataSource */](_this.campaignsData);
             _this.loading = false;
         });
@@ -823,7 +1088,8 @@ var CampaignsComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_5_angularfire2_database__["a" /* AngularFireDatabase */],
             __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* ChangeDetectorRef */],
             __WEBPACK_IMPORTED_MODULE_0__providers_campains_campaigns_service__["a" /* CampaignsService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_cdk_layout__["d" /* MediaMatcher */]])
+            __WEBPACK_IMPORTED_MODULE_2__angular_cdk_layout__["d" /* MediaMatcher */],
+            __WEBPACK_IMPORTED_MODULE_7_ngx_order_pipe__["b" /* OrderPipe */]])
     ], CampaignsComponent);
     return CampaignsComponent;
 }());
@@ -835,7 +1101,7 @@ var CampaignsComponent = /** @class */ (function () {
 /***/ "./src/app/pages/clubs/add-club/add-club.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>{{ data ? 'Edit Club' : 'Add Club' }}</h1>\n<form [formGroup]=\"form\" class=\"add-club-form\">\n  <div mat-dialog-content>\n\n      <mat-form-field style=\"width: 100%\">\n        <i matPrefix class=\"fas fa-shield-alt\"></i>\n        <input matInput formControlName=\"name\" placeholder=\"Club name\" required>\n      </mat-form-field>\n\n      <mat-form-field style=\"width: 100%\">\n        <i matPrefix class=\"fas fa-trophy\"></i>\n        <mat-select placeholder=\"Competition\" [formControl]=\"competitionInput\" multiple required>\n          <mat-select-trigger>\n            {{ competitionInput?.value ? getCompetitonName(competitionInput.value[0]) : '' }}\n            <span *ngIf=\"competitionInput.value?.length > 1\" class=\"uk-text-muted\">\n              (+{{ competitionInput.value.length - 1 }} others)\n            </span>\n          </mat-select-trigger>\n          <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">{{ item.description }}</mat-option>\n        </mat-select>\n      </mat-form-field>\n      \n      <mat-form-field style=\"width: 100%\">\n        <i matPrefix class=\"fas fa-futbol\"></i>\n        <input matInput formControlName=\"homeGround\" placeholder=\"Home ground\">\n      </mat-form-field>\n\n      <mat-form-field style=\"width: 100%\">\n          <i matPrefix class=\"fas fa-envelope\"></i>\n        <input matInput formControlName=\"emailAddress\" placeholder=\"Email address\">\n      </mat-form-field>\n\n      <mat-form-field style=\"width: 100%\">\n          <i matPrefix class=\"fas fa-phone\"></i>\n        <input matInput formControlName=\"contactNumber\" placeholder=\"Contact number\">\n      </mat-form-field>\n      \n      <mat-form-field style=\"width: 100%\">\n          <i matPrefix class=\"fas fa-map-marker\"></i>\n        <input matInput formControlName=\"physicalAddress\" placeholder=\"Physical address\">\n      </mat-form-field>\n\n      <!-- SOCIAL -->\n      <div *ngIf=\"toggleMoreFields\">\n        <mat-form-field style=\"width: 100%\">\n          <i matPrefix class=\"fas fa-globe\"></i>\n          <input matInput formControlName=\"website\" placeholder=\"Website\">\n        </mat-form-field>\n        \n        <mat-form-field style=\"width: 100%\">\n          <i matPrefix class=\"fab fa-facebook\"></i>\n          <input matInput formControlName=\"facebookUrl\" placeholder=\"Facebook link\">\n        </mat-form-field>\n        \n        <mat-form-field style=\"width: 100%\">\n          <i matPrefix class=\"fab fa-twitter\"></i>\n          <input matInput formControlName=\"twitterUrl\" placeholder=\"Twitter link\">\n        </mat-form-field>\n\n        <mat-form-field style=\"width: 100%\">\n          <i matPrefix class=\"fab fa-instagram\"></i>\n          <input matInput formControlName=\"instagramUrl\" placeholder=\"Instagram link\">\n        </mat-form-field>\n\n        <mat-form-field style=\"width: 100%\">\n          <i matPrefix class=\"fab fa-youtube\"></i>\n          <input matInput formControlName=\"youtubeUrl\" placeholder=\"Youtube link\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"uk-text-center uk-margin-bottom\">\n          <a mat-button (click)=\"toggleMoreFields = !toggleMoreFields\" mat-button>{{ toggleMoreFields ? 'Less fields' : 'More fields' }}</a>\n      </div>\n  </div>\n\n  <div mat-dialog-actions class=\"uk-align-right\">\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\n    <button mat-raised-button color=\"primary\" (click)=\"addCompetition()\" [disabled]=\"!form.valid || !competitionInput.valid\" cdkFocusInitial>Save</button>\n  </div>\n</form>"
+module.exports = "<h1 mat-dialog-title>{{ data ? 'Edit Club' : 'Add Club' }}</h1>\r\n<form [formGroup]=\"form\" class=\"add-club-form\">\r\n  <div mat-dialog-content>\r\n\r\n      <mat-form-field style=\"width: 100%\">\r\n        <i matPrefix class=\"fas fa-shield-alt\"></i>\r\n        <input matInput formControlName=\"name\" placeholder=\"Club name\" required>\r\n      </mat-form-field>\r\n\r\n      <mat-form-field style=\"width: 100%\">\r\n        <i matPrefix class=\"fas fa-trophy\"></i>\r\n        <mat-select placeholder=\"Competition\" [formControl]=\"competitionInput\" multiple required>\r\n          <mat-select-trigger>\r\n            {{ competitionInput?.value ? getCompetitonName(competitionInput.value[0]) : '' }}\r\n            <span *ngIf=\"competitionInput.value?.length > 1\" class=\"uk-text-muted\">\r\n              (+{{ competitionInput.value.length - 1 }} others)\r\n            </span>\r\n          </mat-select-trigger>\r\n          <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">{{ item.description }}</mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n      \r\n      <mat-form-field style=\"width: 100%\">\r\n        <i matPrefix class=\"fas fa-futbol\"></i>\r\n        <input matInput formControlName=\"homeGround\" placeholder=\"Home ground\">\r\n      </mat-form-field>\r\n\r\n      <mat-form-field style=\"width: 100%\">\r\n          <i matPrefix class=\"fas fa-envelope\"></i>\r\n        <input matInput formControlName=\"emailAddress\" placeholder=\"Email address\">\r\n      </mat-form-field>\r\n\r\n      <mat-form-field style=\"width: 100%\">\r\n          <i matPrefix class=\"fas fa-phone\"></i>\r\n        <input matInput formControlName=\"contactNumber\" placeholder=\"Contact number\">\r\n      </mat-form-field>\r\n      \r\n      <mat-form-field style=\"width: 100%\">\r\n          <i matPrefix class=\"fas fa-map-marker\"></i>\r\n        <input matInput formControlName=\"physicalAddress\" placeholder=\"Physical address\">\r\n      </mat-form-field>\r\n\r\n      <!-- SOCIAL -->\r\n      <div *ngIf=\"toggleMoreFields\">\r\n        <mat-form-field style=\"width: 100%\">\r\n          <i matPrefix class=\"fas fa-globe\"></i>\r\n          <input matInput formControlName=\"website\" placeholder=\"Website\">\r\n        </mat-form-field>\r\n        \r\n        <mat-form-field style=\"width: 100%\">\r\n          <i matPrefix class=\"fab fa-facebook\"></i>\r\n          <input matInput formControlName=\"facebookUrl\" placeholder=\"Facebook link\">\r\n        </mat-form-field>\r\n        \r\n        <mat-form-field style=\"width: 100%\">\r\n          <i matPrefix class=\"fab fa-twitter\"></i>\r\n          <input matInput formControlName=\"twitterUrl\" placeholder=\"Twitter link\">\r\n        </mat-form-field>\r\n\r\n        <mat-form-field style=\"width: 100%\">\r\n          <i matPrefix class=\"fab fa-instagram\"></i>\r\n          <input matInput formControlName=\"instagramUrl\" placeholder=\"Instagram link\">\r\n        </mat-form-field>\r\n\r\n        <mat-form-field style=\"width: 100%\">\r\n          <i matPrefix class=\"fab fa-youtube\"></i>\r\n          <input matInput formControlName=\"youtubeUrl\" placeholder=\"Youtube link\">\r\n        </mat-form-field>\r\n      </div>\r\n\r\n      <div class=\"uk-text-center uk-margin-bottom\">\r\n          <a mat-button (click)=\"toggleMoreFields = !toggleMoreFields\" mat-button>{{ toggleMoreFields ? 'Less fields' : 'More fields' }}</a>\r\n      </div>\r\n  </div>\r\n\r\n  <div mat-dialog-actions class=\"uk-align-right\">\r\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\r\n    <button mat-raised-button color=\"primary\" (click)=\"addCompetition()\" [disabled]=\"!form.valid || !competitionInput.valid\" cdkFocusInitial>Save</button>\r\n  </div>\r\n</form>"
 
 /***/ }),
 
@@ -948,7 +1214,7 @@ var AddClubComponent = /** @class */ (function () {
 /***/ "./src/app/pages/clubs/clubs-listing/clubs-listing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"uk-section uk-section-muted uk-padding\">\n    <div uk-grid class=\"uk-flex-middle\">\n        <div class=\"uk-width-expand@m uk-width-1-1@s\">\n            <h1 class=\"uk-margin-remove\">Clubs</h1>\n            <p class=\"uk-margin-remove\">Manage your Clubs</p>\n        </div>\n    </div>\n</div>\n<div class=\"uk-section uk-section-default uk-padding-small\">\n  <div class=\"uk-grid-small\" uk-grid>\n    <div class=\"uk-width-1-4@m uk-width-1-1@s\">\n      <div class=\"uk-inline uk-width-1-1\">\n        <mat-form-field class=\"uk-width-1-1\">\n            <mat-select placeholder=\"Filter by competition\" (change)=\"onCompetitionChange($event.value)\">\n              <mat-option value=\"\">All</mat-option>\n              <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">\n                {{ item.description }}\n              </mat-option>\n            </mat-select>\n          </mat-form-field>\n      </div>\n    </div>\n    <div class=\"uk-width-1-4@m uk-width-1-1@s\">\n      <div class=\"uk-inline uk-width-1-1\">\n        <mat-form-field class=\"uk-width-1-1\">\n            <input matInput type=\"text\" placeholder=\"Search\" (keyup)=\"applyFilter($event.target.value)\" [(ngModel)]=\"searchClub\"/>\n            <button mat-button *ngIf=\"searchClub\" matSuffix mat-icon-button aria-label=\"Clear\" (click)=\"applyFilter(''); searchClub =''\">\n              <mat-icon>close</mat-icon>\n            </button>\n          </mat-form-field>\n      </div>\n    </div>\n    <!-- <div class=\"uk-width-expand@m uk-width-1-1@s uk-text-right\">\n      <button mat-raised-button color=\"primary\" (click)=\"openAddClub()\">Add New</button>\n    </div> -->\n  </div>\n</div>\n\n\n<hr class=\"uk-margin-remove\">\n\n<mat-table #table [dataSource]=\"dataSource\" class=\"grid-listing-table\" [hidden]=\"loading\" style=\"margin-bottom: 100px;\">\n\n    <!-- Position Column -->\n    <ng-container matColumnDef=\"name\">\n      <mat-header-cell *matHeaderCellDef> Club name </mat-header-cell>\n      <mat-cell *matCellDef=\"let element\">\n         <mat-list>\n            <mat-list-item>\n              <i matPrefix mat-list-icon class=\"fas fa-shield-alt\"></i>\n              <h5 mat-line>{{ element.name }} </h5>\n              <span class=\"uk-text-break uk-text-muted\" mat-line *ngFor=\"let item of element.competitions\">{{ getCompetition(item)?.description }}</span>\n            </mat-list-item>\n          </mat-list>\n        </mat-cell>\n    </ng-container>\n\n    <ng-container matColumnDef=\"homeGround\">\n        <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef> Home ground </mat-header-cell>\n        <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\">\n          <span [ngClass]=\"{'uk-text-muted': !element.homeGround }\">{{ element.homeGround ? element.homeGround : 'Not provided' }}</span>\n        </mat-cell>\n    </ng-container>\n    \n    <!-- <ng-container matColumnDef=\"competitions\">\n      <mat-header-cell *matHeaderCellDef> Competitions </mat-header-cell>\n      <mat-cell *matCellDef=\"let element\">\n          <ul class=\"uk-list uk-margin-remove comp-list\">\n              <li *ngFor=\"let item of element.competitions\" matTooltip=\"{{ getCompetitionTypeName(getCompetition(item)?.type) }}\">{{ getCompetition(item)?.description }}</li>\n          </ul>\n      </mat-cell>\n    </ng-container> -->\n\n    <!-- contacts Column -->\n    <ng-container matColumnDef=\"contacts\">\n      <mat-header-cell style=\"max-width: 50px\" *matHeaderCellDef> More </mat-header-cell>\n      <mat-cell *matCellDef=\"let element\" style=\"max-width: 50px\"> \n          <button mat-icon-button [matMenuTriggerFor]=\"menu\">\n            <mat-icon aria-label=\"Example icon-button with a heart icon\">info</mat-icon>\n          </button>\n          <mat-menu #menu=\"matMenu\" xPosition=\"after\">\n\n            <mat-list role=\"list\">\n              <mat-list-item role=\"listitem\">\n                  <mat-icon style=\"margin-right: 12px\">email</mat-icon>\n                  <span [ngClass]=\"{'uk-text-muted': !element.emailAddress}\">{{ element.emailAddress ? element.emailAddress : 'Not provided' }}</span>\n              </mat-list-item>\n              <mat-list-item role=\"listitem\">\n                  <mat-icon style=\"margin-right: 12px\">phone</mat-icon>\n                  <span [ngClass]=\"{'uk-text-muted': !element.contactNumber }\">{{ element.contactNumber ? element.contactNumber : 'Not provided' }}</span>\n              </mat-list-item>\n              <mat-list-item role=\"listitem\">\n                  <mat-icon style=\"margin-right: 12px\">location_on</mat-icon>\n                  <span [ngClass]=\"{'uk-text-muted': !element.physicalAddress}\">{{ element.physicalAddress ? element.physicalAddress : 'Not provided' }}</span>\n              </mat-list-item>\n\n              <mat-divider></mat-divider>\n              \n              <mat-list-item role=\"listitem\">\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fas fa-globe\"></i></span>\n                  <a *ngIf=\"element.website\" href=\"{{ element.website }}\" target=\"_blank\">Official Website</a>\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.website\">Not provided</span>\n              </mat-list-item>\n              \n              <mat-list-item role=\"listitem\">\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fab fa-facebook\"></i></span>\n                  <a *ngIf=\"element.facebookUrl\" href=\"{{ element.facebookUrl }}\" target=\"_blank\">Official Facebook</a>\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.facebookUrl\">Not provided</span>\n              </mat-list-item>\n\n              <mat-list-item role=\"listitem\">\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fab fa-twitter\"></i></span>\n                  <a *ngIf=\"element.twitterUrl\" href=\"{{ element.twitterUrl }}\" target=\"_blank\">Official Twitter</a>\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.twitterUrl\">Not provided</span>\n              </mat-list-item>\n\n              <mat-list-item role=\"listitem\">\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fab fa-instagram\"></i></span>\n                  <a *ngIf=\"element.instagramUrl\" href=\"{{ element.instagramUrl }}\" target=\"_blank\">Official Instagram</a>\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.instagramUrl\">Not provided</span>\n              </mat-list-item>\n\n              <mat-list-item role=\"listitem\">\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fab fa-youtube\"></i></span>\n                  <a *ngIf=\"element.youtubeUrl\" href=\"{{ element.youtubeUrl ? element.youtubeUrl : 'https://fb.com' }}\" target=\"_blank\">Official Youtube</a>\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.youtubeUrl\">Not provided</span>\n              </mat-list-item>\n            </mat-list>\n          </mat-menu>  \n      </mat-cell>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"actions\">\n      <mat-header-cell style=\"max-width: 50px\" *matHeaderCellDef></mat-header-cell>\n      <mat-cell *matCellDef=\"let element\" style=\"max-width: 50px\" class=\"uk-text-right\">\n        <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\n        <mat-menu #menu=\"matMenu\">\n          <button mat-menu-item (click)=\"editClub(element)\">\n            <mat-icon>mode_edit</mat-icon>\n            <span>Edit</span>\n          </button>\n          <button mat-menu-item (click)=\"deleteClub(element)\">\n            <mat-icon>delete</mat-icon>\n            <span>Delete</span>\n          </button>\n        </mat-menu>\n      </mat-cell>\n    </ng-container>\n\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n</mat-table>\n\n<button class=\"floating-add-button\" (click)=\"openAddClub(false)\" mat-fab color=\"primary\"  matTooltip=\"Add new fixture\"[matTooltipPosition]=\"'left'\">\n    <mat-icon aria-label=\"Add new fixture\">add</mat-icon>\n</button>\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>\n\n"
+module.exports = "<div class=\"uk-section uk-section-muted uk-padding\">\r\n    <div uk-grid class=\"uk-flex-middle\">\r\n        <div class=\"uk-width-expand@m uk-width-1-1@s\">\r\n            <h1 class=\"uk-margin-remove\">Clubs</h1>\r\n            <p class=\"uk-margin-remove\">Manage your Clubs</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"uk-section uk-section-default uk-padding-small\">\r\n  <div class=\"uk-grid-small\" uk-grid>\r\n    <div class=\"uk-width-1-4@m uk-width-1-1@s\">\r\n      <div class=\"uk-inline uk-width-1-1\">\r\n        <mat-form-field class=\"uk-width-1-1\">\r\n            <mat-select placeholder=\"Filter by competition\" (change)=\"onCompetitionChange($event.value)\">\r\n              <mat-option value=\"\">All</mat-option>\r\n              <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">\r\n                {{ item.description }}\r\n              </mat-option>\r\n            </mat-select>\r\n          </mat-form-field>\r\n      </div>\r\n    </div>\r\n    <div class=\"uk-width-1-4@m uk-width-1-1@s\">\r\n      <div class=\"uk-inline uk-width-1-1\">\r\n        <mat-form-field class=\"uk-width-1-1\">\r\n            <input matInput type=\"text\" placeholder=\"Search\" (keyup)=\"applyFilter($event.target.value)\" [(ngModel)]=\"searchClub\"/>\r\n            <button mat-button *ngIf=\"searchClub\" matSuffix mat-icon-button aria-label=\"Clear\" (click)=\"applyFilter(''); searchClub =''\">\r\n              <mat-icon>close</mat-icon>\r\n            </button>\r\n          </mat-form-field>\r\n      </div>\r\n    </div>\r\n    <!-- <div class=\"uk-width-expand@m uk-width-1-1@s uk-text-right\">\r\n      <button mat-raised-button color=\"primary\" (click)=\"openAddClub()\">Add New</button>\r\n    </div> -->\r\n  </div>\r\n</div>\r\n\r\n\r\n<hr class=\"uk-margin-remove\">\r\n\r\n<mat-table #table [dataSource]=\"dataSource\" class=\"grid-listing-table\" [hidden]=\"loading\" style=\"margin-bottom: 100px;\">\r\n\r\n    <!-- Position Column -->\r\n    <ng-container matColumnDef=\"name\">\r\n      <mat-header-cell *matHeaderCellDef> Club name </mat-header-cell>\r\n      <mat-cell *matCellDef=\"let element\">\r\n         <mat-list>\r\n            <mat-list-item>\r\n              <i matPrefix mat-list-icon class=\"fas fa-shield-alt\"></i>\r\n              <h5 mat-line>{{ element.name }} </h5>\r\n              <span class=\"uk-text-break uk-text-muted\" mat-line *ngFor=\"let item of element.competitions\">{{ getCompetition(item)?.description }}</span>\r\n            </mat-list-item>\r\n          </mat-list>\r\n        </mat-cell>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"homeGround\">\r\n        <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef> Home ground </mat-header-cell>\r\n        <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\">\r\n          <span [ngClass]=\"{'uk-text-muted': !element.homeGround }\">{{ element.homeGround ? element.homeGround : 'Not provided' }}</span>\r\n        </mat-cell>\r\n    </ng-container>\r\n    \r\n    <!-- <ng-container matColumnDef=\"competitions\">\r\n      <mat-header-cell *matHeaderCellDef> Competitions </mat-header-cell>\r\n      <mat-cell *matCellDef=\"let element\">\r\n          <ul class=\"uk-list uk-margin-remove comp-list\">\r\n              <li *ngFor=\"let item of element.competitions\" matTooltip=\"{{ getCompetitionTypeName(getCompetition(item)?.type) }}\">{{ getCompetition(item)?.description }}</li>\r\n          </ul>\r\n      </mat-cell>\r\n    </ng-container> -->\r\n\r\n    <!-- contacts Column -->\r\n    <ng-container matColumnDef=\"contacts\">\r\n      <mat-header-cell style=\"max-width: 50px\" *matHeaderCellDef> More </mat-header-cell>\r\n      <mat-cell *matCellDef=\"let element\" style=\"max-width: 50px\"> \r\n          <button mat-icon-button [matMenuTriggerFor]=\"menu\">\r\n            <mat-icon aria-label=\"Example icon-button with a heart icon\">info</mat-icon>\r\n          </button>\r\n          <mat-menu #menu=\"matMenu\" xPosition=\"after\">\r\n\r\n            <mat-list role=\"list\">\r\n              <mat-list-item role=\"listitem\">\r\n                  <mat-icon style=\"margin-right: 12px\">email</mat-icon>\r\n                  <span [ngClass]=\"{'uk-text-muted': !element.emailAddress}\">{{ element.emailAddress ? element.emailAddress : 'Not provided' }}</span>\r\n              </mat-list-item>\r\n              <mat-list-item role=\"listitem\">\r\n                  <mat-icon style=\"margin-right: 12px\">phone</mat-icon>\r\n                  <span [ngClass]=\"{'uk-text-muted': !element.contactNumber }\">{{ element.contactNumber ? element.contactNumber : 'Not provided' }}</span>\r\n              </mat-list-item>\r\n              <mat-list-item role=\"listitem\">\r\n                  <mat-icon style=\"margin-right: 12px\">location_on</mat-icon>\r\n                  <span [ngClass]=\"{'uk-text-muted': !element.physicalAddress}\">{{ element.physicalAddress ? element.physicalAddress : 'Not provided' }}</span>\r\n              </mat-list-item>\r\n\r\n              <mat-divider></mat-divider>\r\n              \r\n              <mat-list-item role=\"listitem\">\r\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fas fa-globe\"></i></span>\r\n                  <a *ngIf=\"element.website\" href=\"{{ element.website }}\" target=\"_blank\">Official Website</a>\r\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.website\">Not provided</span>\r\n              </mat-list-item>\r\n              \r\n              <mat-list-item role=\"listitem\">\r\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fab fa-facebook\"></i></span>\r\n                  <a *ngIf=\"element.facebookUrl\" href=\"{{ element.facebookUrl }}\" target=\"_blank\">Official Facebook</a>\r\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.facebookUrl\">Not provided</span>\r\n              </mat-list-item>\r\n\r\n              <mat-list-item role=\"listitem\">\r\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fab fa-twitter\"></i></span>\r\n                  <a *ngIf=\"element.twitterUrl\" href=\"{{ element.twitterUrl }}\" target=\"_blank\">Official Twitter</a>\r\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.twitterUrl\">Not provided</span>\r\n              </mat-list-item>\r\n\r\n              <mat-list-item role=\"listitem\">\r\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fab fa-instagram\"></i></span>\r\n                  <a *ngIf=\"element.instagramUrl\" href=\"{{ element.instagramUrl }}\" target=\"_blank\">Official Instagram</a>\r\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.instagramUrl\">Not provided</span>\r\n              </mat-list-item>\r\n\r\n              <mat-list-item role=\"listitem\">\r\n                <span class=\"mat-icon\" style=\"margin-right: 12px;text-align: center;\"><i class=\"fab fa-youtube\"></i></span>\r\n                  <a *ngIf=\"element.youtubeUrl\" href=\"{{ element.youtubeUrl ? element.youtubeUrl : 'https://fb.com' }}\" target=\"_blank\">Official Youtube</a>\r\n                  <span class=\"uk-text-muted\" *ngIf=\"!element.youtubeUrl\">Not provided</span>\r\n              </mat-list-item>\r\n            </mat-list>\r\n          </mat-menu>  \r\n      </mat-cell>\r\n    </ng-container>\r\n\r\n\r\n    <ng-container matColumnDef=\"actions\">\r\n      <mat-header-cell style=\"max-width: 50px\" *matHeaderCellDef></mat-header-cell>\r\n      <mat-cell *matCellDef=\"let element\" style=\"max-width: 50px\" class=\"uk-text-right\">\r\n        <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\r\n        <mat-menu #menu=\"matMenu\">\r\n          <button mat-menu-item (click)=\"editClub(element)\">\r\n            <mat-icon>mode_edit</mat-icon>\r\n            <span>Edit</span>\r\n          </button>\r\n          <button mat-menu-item (click)=\"deleteClub(element)\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span>Delete</span>\r\n          </button>\r\n        </mat-menu>\r\n      </mat-cell>\r\n    </ng-container>\r\n\r\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n</mat-table>\r\n\r\n<button class=\"floating-add-button\" (click)=\"openAddClub(false)\" mat-fab color=\"primary\"  matTooltip=\"Add new fixture\"[matTooltipPosition]=\"'left'\">\r\n    <mat-icon aria-label=\"Add new fixture\">add</mat-icon>\r\n</button>\r\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>\r\n\r\n"
 
 /***/ }),
 
@@ -972,6 +1238,7 @@ module.exports = ".comp-list {\n  padding: 5px 0; }\n  .comp-list li {\n    marg
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_clubs_clubs_providers_service__ = __webpack_require__("./src/app/providers/clubs/clubs-providers.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_cdk_layout__ = __webpack_require__("./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ngx_order_pipe__ = __webpack_require__("./node_modules/ngx-order-pipe/ngx-order-pipe.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -989,8 +1256,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ClubsListingComponent = /** @class */ (function () {
-    function ClubsListingComponent(dialog, afs, af, competitionServices, clubsService, changeDetectorRef, media) {
+    function ClubsListingComponent(dialog, afs, af, competitionServices, clubsService, changeDetectorRef, media, orderPipe) {
         var _this = this;
         this.dialog = dialog;
         this.afs = afs;
@@ -1006,7 +1274,7 @@ var ClubsListingComponent = /** @class */ (function () {
         this.mobileQuery.addListener(this._mobileQueryListener);
         this.loading = true;
         clubsService.getClubs().valueChanges().subscribe(function (data) {
-            _this.clubsData = data;
+            _this.clubsData = orderPipe.transform(data, 'name');
             _this.dataSource = new __WEBPACK_IMPORTED_MODULE_5__angular_material__["I" /* MatTableDataSource */](_this.clubsData);
             _this.loading = false;
         });
@@ -1087,7 +1355,8 @@ var ClubsListingComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_0__providers_competitions_competition_providers_service__["a" /* CompetitionProvidersService */],
             __WEBPACK_IMPORTED_MODULE_6__providers_clubs_clubs_providers_service__["a" /* ClubsProvidersService */],
             __WEBPACK_IMPORTED_MODULE_2__angular_core__["k" /* ChangeDetectorRef */],
-            __WEBPACK_IMPORTED_MODULE_7__angular_cdk_layout__["d" /* MediaMatcher */]])
+            __WEBPACK_IMPORTED_MODULE_7__angular_cdk_layout__["d" /* MediaMatcher */],
+            __WEBPACK_IMPORTED_MODULE_8_ngx_order_pipe__["b" /* OrderPipe */]])
     ], ClubsListingComponent);
     return ClubsListingComponent;
 }());
@@ -1099,7 +1368,7 @@ var ClubsListingComponent = /** @class */ (function () {
 /***/ "./src/app/pages/competitions/add-competition/add-competitions.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>{{ data.id ? 'Edit Competition' : 'Add Competition' }}</h1>\n<form [formGroup]=\"form\" class=\"add-competition-form\">\n  <div mat-dialog-content>\n      <mat-form-field style=\"width: 100%\">\n        <input matInput formControlName=\"shortName\" placeholder=\"Short name\" required>\n      </mat-form-field>\n\n      <mat-form-field style=\"width: 100%\">\n        <input matInput formControlName=\"description\" placeholder=\"Description\" required>\n      </mat-form-field>\n\n      <mat-form-field style=\"width: 100%\">\n        <mat-select placeholder=\"Competition type\" #compType formControlName=\"type\" required>\n          <mat-option *ngFor=\"let item of competitionTypes\" [value]=\"item.id\">\n            {{ item.name }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n\n      <mat-form-field style=\"width: 100%\">\n        <input matInput formControlName=\"numberOfClubs\" placeholder=\"Number Of Clubs\" required>\n      </mat-form-field>\n      \n      <mat-form-field style=\"width: 100%\" *ngIf=\"getCompetitionType(compType.value)?.shortName == 'GS'\">\n          <input matInput formControlName=\"numberOfGroups\" placeholder=\"Number Of Groups\" required>\n      </mat-form-field>\n\n      \n      <mat-form-field style=\"width: 100%\" *ngIf=\"getCompetitionType(compType.value)?.shortName == 'GS'\">\n        <input matInput formControlName=\"numberOfClubsPerGroup\" placeholder=\"Number Of Clubs Per Group\" required>\n      </mat-form-field>\n\n  </div>\n\n  <div mat-dialog-actions class=\"uk-align-right\">\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\n    <button mat-button (click)=\"addCompetition()\" [disabled]=\"!form.valid\" mat-raised-button color=\"primary\" cdkFocusInitial>Save</button>\n  </div>\n</form>"
+module.exports = "<h1 mat-dialog-title>{{ data.id ? 'Edit Competition' : 'Add Competition' }}</h1>\r\n<form [formGroup]=\"form\" class=\"add-competition-form\">\r\n  <div mat-dialog-content>\r\n      <mat-form-field style=\"width: 100%\">\r\n        <input matInput formControlName=\"shortName\" placeholder=\"Short name\" required>\r\n      </mat-form-field>\r\n\r\n      <mat-form-field style=\"width: 100%\">\r\n        <input matInput formControlName=\"description\" placeholder=\"Description\" required>\r\n      </mat-form-field>\r\n\r\n      <mat-form-field style=\"width: 100%\">\r\n        <mat-select placeholder=\"Competition type\" #compType formControlName=\"type\" required>\r\n          <mat-option *ngFor=\"let item of competitionTypes\" [value]=\"item.id\">\r\n            {{ item.name }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n\r\n      <mat-form-field style=\"width: 100%\">\r\n        <input matInput formControlName=\"numberOfClubs\" placeholder=\"Number Of Clubs\" required>\r\n      </mat-form-field>\r\n      \r\n      <mat-form-field style=\"width: 100%\" *ngIf=\"checkCompetitionType(compType.value)?.shortName == 'GS'\">\r\n        <input matInput formControlName=\"numberOfClubsPerGroup\" placeholder=\"Number Of Clubs Per Group\" required>\r\n      </mat-form-field>\r\n      \r\n      <mat-form-field style=\"width: 100%\" *ngIf=\"checkCompetitionType(compType.value)?.shortName == 'GS'\">\r\n          <input matInput formControlName=\"numberOfGroups\" placeholder=\"Number Of Groups\" required>\r\n      </mat-form-field>\r\n\r\n  </div>\r\n\r\n  <div mat-dialog-actions class=\"uk-align-right\">\r\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\r\n    <button mat-button (click)=\"addCompetition()\" [disabled]=\"!form.valid\" mat-raised-button color=\"primary\" cdkFocusInitial>Save</button>\r\n  </div>\r\n</form>"
 
 /***/ }),
 
@@ -1142,6 +1411,7 @@ var AddCompetitionsComponent = /** @class */ (function () {
         this.data = data;
         this.competitionServices = competitionServices;
         this.formBuilder = formBuilder;
+        this.groupLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
         competitionServices.getCompetitionTypes().valueChanges().subscribe(function (data) {
             _this.competitionTypes = data;
         });
@@ -1168,20 +1438,42 @@ var AddCompetitionsComponent = /** @class */ (function () {
             _this.loading = false;
         });
     };
-    AddCompetitionsComponent.prototype.getCompetitionType = function (id) {
-        if (id && this.competitionsTypesData) {
-            var compType = this.competitionsTypesData.find(function (competitionType) { return competitionType.id === id; });
+    AddCompetitionsComponent.prototype.checkCompetitionType = function (id) {
+        var _this = this;
+        if (this.competitionsTypesData) {
+            var compType = this.competitionsTypesData.find(function (competitionType) { return competitionType.id === (id ? id : _this.data.type); });
             return compType;
         }
     };
     AddCompetitionsComponent.prototype.addCompetition = function () {
+        var _this = this;
+        var groupsData = [];
         this.competitionData = this.form.value;
         this.competitionData.id = this.data ? this.data.id : null;
+        var compType = this.competitionsTypesData.find(function (competitionType) { return competitionType.id === _this.competitionData.type; });
         if (this.data.id) {
-            this.competitionServices.updateCompetition(this.competitionData);
+            if (compType.shortName === 'GS') {
+                for (var i = 0; i < this.competitionData.numberOfGroups; i++) {
+                    groupsData.push({ group: this.groupLetters[i] });
+                }
+                this.competitionData.groupsData = this.data.groupsData ? this.data.groupsData : groupsData;
+                this.competitionServices.updateCompetition(this.competitionData);
+            }
+            else {
+                this.competitionServices.updateCompetition(this.competitionData);
+            }
         }
         else {
-            this.competitionServices.addCompetition(this.competitionData);
+            if (compType.shortName === 'GS') {
+                for (var i = 0; i < this.competitionData.numberOfGroups; i++) {
+                    groupsData.push({ group: this.groupLetters[i] });
+                }
+                this.competitionData.groupsData = groupsData;
+                this.competitionServices.addCompetition(this.competitionData);
+            }
+            else {
+                this.competitionServices.addCompetition(this.competitionData);
+            }
         }
         this.dialogRef.close();
     };
@@ -1205,7 +1497,7 @@ var AddCompetitionsComponent = /** @class */ (function () {
 /***/ "./src/app/pages/competitions/competition-listings/competition-listings.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"uk-section uk-section-muted uk-padding\">\n    <div uk-grid class=\"uk-flex-middle\">\n        <div class=\"uk-width-expand@m uk-width-1-1@s\">\n            <h1 class=\"uk-margin-remove\">Competitions</h1>\n            <p class=\"uk-margin-remove\">Manage your competitions</p>\n        </div>\n    </div>\n</div>\n\n<!-- Search row -->\n<div class=\"uk-section uk-section-default uk-padding-small\">\n  <div uk-grid>\n      <div class=\"uk-width-3-4@m uk-width-1-1@s\">\n        <div class=\"uk-inline\">\n          <span class=\"uk-form-icon uk-form-icon-flip\" uk-icon=\"icon: search\"></span>\n          <input class=\"uk-input\" type=\"text\">\n        </div>\n      </div>\n      <!-- <div class=\"uk-width-expand@m uk-width-1-1@s uk-text-right\">\n        <button mat-raised-button color=\"primary\" (click)=\"openAddCompetition(false)\">Add New</button>\n      </div> -->\n  </div>\n</div>\n\n<hr class=\"uk-margin-remove\">\n\n<mat-table #table [dataSource]=\"dataSource\" class=\"grid-listing-table\" matSort [hidden]=\"loading\" style=\"margin-bottom: 100px;\">\n\n    <!-- Position Column -->\n    <ng-container matColumnDef=\"shortName\">\n      <mat-header-cell *matHeaderCellDef mat-sort-header> Short name </mat-header-cell>\n      <mat-cell *matCellDef=\"let element\">\n        <mat-list>\n            <mat-list-item>\n              <i matPrefix mat-list-icon class=\"fas fa-trophy\"></i>\n              <h5 mat-line>{{ element.shortName }} </h5>\n              <span [hidden]=\"!mobileQuery.matches\" class=\"uk-text-break uk-text-muted\" mat-line>{{ element.description }}</span>\n              <span [hidden]=\"!mobileQuery.matches\" class=\"uk-text-break uk-text-muted\" mat-line>{{ getCompetitionType(element.type)?.name }}</span>\n            </mat-list-item>\n          </mat-list>\n      </mat-cell>\n    </ng-container>\n\n    <!-- Name Column -->\n    <ng-container matColumnDef=\"description\">\n      <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef mat-sort-header> Description </mat-header-cell>\n      <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\"> {{ element.description }} </mat-cell>\n    </ng-container>\n\n    <!-- Weight Column -->\n    <ng-container matColumnDef=\"type\">\n      <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef mat-sort-header> Type </mat-header-cell>\n      <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\"> {{ getCompetitionType(element.type)?.name }} </mat-cell>\n    </ng-container>\n\n    <!-- Symbol Column -->\n    <ng-container matColumnDef=\"numberOfClubs\">\n      <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef mat-sort-header> Number of Clubs </mat-header-cell>\n      <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\"> {{ element.numberOfClubs }} </mat-cell>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"actions\">\n      <mat-header-cell style=\"max-width: 50px\" *matHeaderCellDef></mat-header-cell>\n      <mat-cell *matCellDef=\"let element\" style=\"max-width: 50px\" class=\"uk-text-right\">\n        <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\n        <mat-menu #menu=\"matMenu\">\n          <button mat-menu-item (click)=\"editCompetition(element, true)\">\n            <mat-icon>mode_edit</mat-icon>\n            <span>Edit</span>\n          </button>\n          <button *ngIf=\"getCompetitionType(element.type)?.shortName == 'GS'\" mat-menu-item (click)=\"manageGroups(element, true)\">\n            <mat-icon>view_list</mat-icon>\n            <span>Manage Groups</span>\n          </button>\n          <button mat-menu-item (click)=\"deleteCompetition(element)\">\n            <mat-icon>delete</mat-icon>\n            <span>Delete</span>\n          </button>\n        </mat-menu>\n      </mat-cell>\n    </ng-container>\n\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n</mat-table>\n\n<button class=\"floating-add-button\" (click)=\"openAddCompetition(false)\" mat-fab color=\"primary\"  matTooltip=\"Add new fixture\"[matTooltipPosition]=\"'left'\">\n    <mat-icon aria-label=\"Add new fixture\">add</mat-icon>\n</button>\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>\n\n"
+module.exports = "<div class=\"uk-section uk-section-muted uk-padding\">\r\n    <div uk-grid class=\"uk-flex-middle\">\r\n        <div class=\"uk-width-expand@m uk-width-1-1@s\">\r\n            <h1 class=\"uk-margin-remove\">Competitions</h1>\r\n            <p class=\"uk-margin-remove\">Manage your competitions</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- Search row -->\r\n<div class=\"uk-section uk-section-default uk-padding-small\">\r\n  <div uk-grid>\r\n      <div class=\"uk-width-3-4@m uk-width-1-1@s\">\r\n        <div class=\"uk-inline\">\r\n          <span class=\"uk-form-icon uk-form-icon-flip\" uk-icon=\"icon: search\"></span>\r\n          <input class=\"uk-input\" type=\"text\">\r\n        </div>\r\n      </div>\r\n      <!-- <div class=\"uk-width-expand@m uk-width-1-1@s uk-text-right\">\r\n        <button mat-raised-button color=\"primary\" (click)=\"openAddCompetition(false)\">Add New</button>\r\n      </div> -->\r\n  </div>\r\n</div>\r\n\r\n<hr class=\"uk-margin-remove\">\r\n\r\n<mat-table #table [dataSource]=\"dataSource\" class=\"grid-listing-table\" matSort [hidden]=\"loading\" style=\"margin-bottom: 100px;\">\r\n\r\n    <!-- Position Column -->\r\n    <ng-container matColumnDef=\"shortName\">\r\n      <mat-header-cell *matHeaderCellDef mat-sort-header> Short name </mat-header-cell>\r\n      <mat-cell *matCellDef=\"let element\">\r\n        <mat-list [routerLink]=\"['/competitions', element.id]\">\r\n            <mat-list-item>\r\n              <i matPrefix mat-list-icon class=\"fas fa-trophy\"></i>\r\n              <h5 mat-line>{{ element.shortName }} </h5>\r\n              <span [hidden]=\"!mobileQuery.matches\" class=\"uk-text-break uk-text-muted\" mat-line>{{ element.description }}</span>\r\n              <span [hidden]=\"!mobileQuery.matches\" class=\"uk-text-break uk-text-muted\" mat-line>{{ getCompetitionType(element.type)?.name }}</span>\r\n            </mat-list-item>\r\n          </mat-list>\r\n      </mat-cell>\r\n    </ng-container>\r\n\r\n    <!-- Name Column -->\r\n    <ng-container matColumnDef=\"description\">\r\n      <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef mat-sort-header> Description </mat-header-cell>\r\n      <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\"> {{ element.description }} </mat-cell>\r\n    </ng-container>\r\n\r\n    <!-- Weight Column -->\r\n    <ng-container matColumnDef=\"type\">\r\n      <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef mat-sort-header> Type </mat-header-cell>\r\n      <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\"> {{ getCompetitionType(element.type)?.name }} </mat-cell>\r\n    </ng-container>\r\n\r\n    <!-- Symbol Column -->\r\n    <ng-container matColumnDef=\"numberOfClubs\">\r\n      <mat-header-cell [hidden]=\"mobileQuery.matches\" *matHeaderCellDef mat-sort-header> Number of Clubs </mat-header-cell>\r\n      <mat-cell [hidden]=\"mobileQuery.matches\" *matCellDef=\"let element\"> {{ element.numberOfClubs }} </mat-cell>\r\n    </ng-container>\r\n\r\n\r\n    <ng-container matColumnDef=\"actions\">\r\n      <mat-header-cell style=\"max-width: 50px\" *matHeaderCellDef></mat-header-cell>\r\n      <mat-cell *matCellDef=\"let element\" style=\"max-width: 50px\" class=\"uk-text-right\">\r\n        <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\r\n        <mat-menu #menu=\"matMenu\">\r\n          <button mat-menu-item (click)=\"editCompetition(element, true)\">\r\n            <mat-icon>mode_edit</mat-icon>\r\n            <span>Edit</span>\r\n          </button>\r\n          <button *ngIf=\"getCompetitionType(element.type)?.shortName == 'GS'\" mat-menu-item (click)=\"manageGroups(element, true)\">\r\n            <mat-icon>view_list</mat-icon>\r\n            <span>Manage Groups</span>\r\n          </button>\r\n          <button mat-menu-item [routerLink]=\"['/competitions', element.id]\">\r\n            <mat-icon>visibility</mat-icon>\r\n            <span>Open Competition</span>\r\n          </button>\r\n          <button mat-menu-item (click)=\"deleteCompetition(element)\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span>Delete</span>\r\n          </button>\r\n        </mat-menu>\r\n      </mat-cell>\r\n    </ng-container>\r\n\r\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n</mat-table>\r\n\r\n<button class=\"floating-add-button\" (click)=\"openAddCompetition(false)\" mat-fab color=\"primary\"  matTooltip=\"Add new fixture\"[matTooltipPosition]=\"'left'\">\r\n    <mat-icon aria-label=\"Add new fixture\">add</mat-icon>\r\n</button>\r\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>\r\n\r\n"
 
 /***/ }),
 
@@ -1229,6 +1521,7 @@ module.exports = ""
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__add_competition_add_competitions_component__ = __webpack_require__("./src/app/pages/competitions/add-competition/add-competitions.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_cdk_layout__ = __webpack_require__("./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ngx_order_pipe__ = __webpack_require__("./node_modules/ngx-order-pipe/ngx-order-pipe.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1246,13 +1539,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var CompetitionListingsComponent = /** @class */ (function () {
-    function CompetitionListingsComponent(dialog, afs, af, competitionServices, changeDetectorRef, media) {
+    function CompetitionListingsComponent(dialog, afs, af, competitionServices, changeDetectorRef, media, orderPipe) {
         var _this = this;
         this.dialog = dialog;
         this.afs = afs;
         this.af = af;
         this.competitionServices = competitionServices;
+        this.orderPipe = orderPipe;
         this.loading = false;
         this.displayedColumns = ['shortName', 'description', 'type', 'numberOfClubs', 'actions'];
         this.type = 'competition';
@@ -1263,7 +1558,7 @@ var CompetitionListingsComponent = /** @class */ (function () {
         this.loading = true;
         this.competitionsRef = afs.collection('competitions');
         competitionServices.getCompetitions().valueChanges().subscribe(function (data) {
-            _this.competitionData = data;
+            _this.competitionData = orderPipe.transform(data, 'shortName');
             _this.dataSource = new __WEBPACK_IMPORTED_MODULE_2__angular_material__["I" /* MatTableDataSource */](_this.competitionData);
             _this.loading = false;
         });
@@ -1290,13 +1585,13 @@ var CompetitionListingsComponent = /** @class */ (function () {
         }
     };
     CompetitionListingsComponent.prototype.openAddCompetition = function (mode) {
-        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_6__add_competition_add_competitions_component__["a" /* AddCompetitionsComponent */], {
+        this.dialog.open(__WEBPACK_IMPORTED_MODULE_6__add_competition_add_competitions_component__["a" /* AddCompetitionsComponent */], {
             width: '500px',
             data: { id: '', shortName: '', description: '', type: '', numberOfClubs: 0 }
         });
     };
     CompetitionListingsComponent.prototype.editCompetition = function (item) {
-        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_6__add_competition_add_competitions_component__["a" /* AddCompetitionsComponent */], {
+        this.dialog.open(__WEBPACK_IMPORTED_MODULE_6__add_competition_add_competitions_component__["a" /* AddCompetitionsComponent */], {
             width: '500px',
             data: item
         });
@@ -1325,9 +1620,108 @@ var CompetitionListingsComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_5_angularfire2_database__["a" /* AngularFireDatabase */],
             __WEBPACK_IMPORTED_MODULE_4__providers_competitions_competition_providers_service__["a" /* CompetitionProvidersService */],
             __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* ChangeDetectorRef */],
-            __WEBPACK_IMPORTED_MODULE_7__angular_cdk_layout__["d" /* MediaMatcher */]])
+            __WEBPACK_IMPORTED_MODULE_7__angular_cdk_layout__["d" /* MediaMatcher */],
+            __WEBPACK_IMPORTED_MODULE_8_ngx_order_pipe__["b" /* OrderPipe */]])
     ], CompetitionListingsComponent);
     return CompetitionListingsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/competitions/competition/competition.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"uk-section uk-section-muted uk-padding\" *ngIf=\"!loading && competitionTypeData && competitionData\">\n  <div uk-grid class=\"uk-flex-middle\">\n    <div class=\"uk-width-expand@m uk-width-1-1@s\">\n      <!-- <h1 class=\"uk-margin-remove\">{{ competitionData?.shortName }}</h1> -->\n      <p class=\"uk-margin-remove\">{{ competitionData?.description }}</p>\n      <span class=\"uk-text-muted\">{{ competitionTypeData?.name }}</span> <br>\n      <span class=\"uk-badge\">{{ competitionData?.numberOfClubs }} Clubs</span>\n    </div>\n  </div>\n</div>\n<mat-card *ngIf=\"!loading && competitionTypeData && competitionData\" class=\"listing-container\">\n  <mat-card-content>\n    <mat-tab-group *ngIf=\"clubsData && competitionTypeData && competitionTypeData?.shortName !== 'GS'\">\n      <mat-tab label=\"Tables\">\n        <app-log-table\n          [competition]=\"competitionData\"\n          [competitionType]=\"competitionTypeData\"\n          [clubsData]=\"clubsData\">\n        </app-log-table>\n\n        <app-group-tables *ngIf=\"competitionTypeData?.shortName == 'GS'\"></app-group-tables>\n      </mat-tab>\n      <mat-tab label=\"Fixtures\">\n        <app-fixtures-listing\n          [competitionID]=\"competitionData.id\"\n          [competitionType]=\"competitionTypeData\"\n          [clubsData]=\"clubsData\">\n        </app-fixtures-listing>\n      </mat-tab>\n      <mat-tab label=\"Scorers\"> Content 3 </mat-tab>\n      <mat-tab label=\"Knockout\" *ngIf=\"competitionTypeData?.shortName == 'GS'\"> Knockout Content </mat-tab>\n    </mat-tab-group>\n  </mat-card-content>\n</mat-card>\n\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/competitions/competition/competition.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pages/competitions/competition/competition.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompetitionComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_competitions_competition_providers_service__ = __webpack_require__("./src/app/providers/competitions/competition-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_clubs_clubs_providers_service__ = __webpack_require__("./src/app/providers/clubs/clubs-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var CompetitionComponent = /** @class */ (function () {
+    function CompetitionComponent(route, activeRoute, competitionServices, clubsService, formBuilder) {
+        var _this = this;
+        this.route = route;
+        this.activeRoute = activeRoute;
+        this.competitionServices = competitionServices;
+        this.clubsService = clubsService;
+        this.formBuilder = formBuilder;
+        this.activeRoute.params.subscribe(function (params) {
+            _this.competitionId = params.id;
+        });
+    }
+    CompetitionComponent.prototype.ngOnInit = function () {
+        this.getCompetition();
+        this.getClubs();
+    };
+    CompetitionComponent.prototype.getCompetition = function () {
+        var _this = this;
+        this.loading = true;
+        this.competitionServices.getCompetitionByID(this.competitionId).then(function (data) {
+            _this.competitionData = data;
+            _this.getCompetitionType(_this.competitionData.type);
+            _this.loading = false;
+        });
+    };
+    CompetitionComponent.prototype.getClubs = function () {
+        var _this = this;
+        this.loading = true;
+        this.clubsService.getClubs().valueChanges().subscribe(function (data) {
+            if (_this.competitionId && data) {
+                _this.clubsData = data.filter(function (item) { return item.competitions.indexOf(_this.competitionId) > -1; });
+                _this.loading = false;
+            }
+        });
+    };
+    CompetitionComponent.prototype.getCompetitionType = function (id) {
+        var _this = this;
+        this.competitionServices.getCompetitionTypeByID(id).then(function (data) {
+            _this.competitionTypeData = data;
+        });
+    };
+    CompetitionComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-competition',
+            template: __webpack_require__("./src/app/pages/competitions/competition/competition.component.html"),
+            styles: [__webpack_require__("./src/app/pages/competitions/competition/competition.component.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_competitions_competition_providers_service__["a" /* CompetitionProvidersService */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_clubs_clubs_providers_service__["a" /* ClubsProvidersService */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormBuilder */]])
+    ], CompetitionComponent);
+    return CompetitionComponent;
 }());
 
 
@@ -1337,14 +1731,14 @@ var CompetitionListingsComponent = /** @class */ (function () {
 /***/ "./src/app/pages/competitions/manage-groups/manage-groups.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>{{ data.description }}</h1>\n<form [formGroup]=\"form\" class=\"manage-group-form\">\n\n<mat-dialog-content>\n  <p>Group allocation</p>\n  <mat-card class=\"uk-margin-small-top\" *ngFor=\"let group of [1,2,3,4]\">\n    <h5>Group A</h5>\n    <mat-form-field style=\"width: 100%\" *ngFor=\"let club of getGroupsArray()\">\n        <mat-select placeholder=\"Club {{ club }}\" formControlName=\"club\" (change)=\"onClubSelect($event.value, group)\">\n            <mat-option *ngFor=\"let item of clubsData\" [value]=\"item.id\">\n            {{ item.name }}\n            </mat-option>\n        </mat-select>\n    </mat-form-field>\n  </mat-card>\n</mat-dialog-content>\n\n\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close>Cancel</button>\n  <button mat-button (click)=\"updateCompetition()\">Save</button>\n</mat-dialog-actions>\n</form>"
+module.exports = "<h1 mat-dialog-title>{{ data.description }}</h1>\r\n<form [formGroup]=\"form\" class=\"manage-group-form\">\r\n\r\n<mat-dialog-content>\r\n  <p>Group allocation</p>\r\n  <mat-card class=\"uk-margin-small-top\" *ngFor=\"let group of data.groupsData\">\r\n    <h5>Group {{ group.group }}</h5>\r\n      <div style=\"position: relative\" *ngFor=\"let club of getClubsInGroup()\">\r\n      <mat-form-field style=\"width: 90%\">\r\n          <mat-select\r\n            #clubInput\r\n            placeholder=\"{{ loading ? 'Loading...' : ('Club ' + club) }}\"\r\n            formControlName=\"club\"\r\n            (change)=\"onClubSelect($event.value, group)\"\r\n            >\r\n              <mat-option *ngFor=\"let item of clubsData | orderBy: 'name'\" [hidden]=\"checkIfClubSelected(item.id)\" [value]=\"item.id\">\r\n              {{ item.name }}\r\n              </mat-option>\r\n          </mat-select>\r\n      </mat-form-field>\r\n      <button *ngIf=\"clubInput.value\" (click)=\"removeClub(clubInput.value);clubInput.value = ''\" mat-icon-button class=\"clear-select\">\r\n        <mat-icon aria-label=\"Remove\">clear</mat-icon>\r\n      </button>\r\n    </div>\r\n  </mat-card>\r\n</mat-dialog-content>\r\n\r\n\r\n<div mat-dialog-actions class=\"uk-align-right\">\r\n  <button mat-button mat-dialog-close>Cancel</button>\r\n  <button mat-button mat-raised-button color=\"primary\" (click)=\"addGroups()\" [disabled]=\"!form.valid\">Save</button>\r\n</div>\r\n</form>"
 
 /***/ }),
 
 /***/ "./src/app/pages/competitions/manage-groups/manage-groups.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".clear-select {\n  position: absolute;\n  right: -5px;\n  bottom: 0;\n  top: 20px; }\n"
 
 /***/ }),
 
@@ -1383,7 +1777,8 @@ var ManageGroupsComponent = /** @class */ (function () {
         this.competitionServices = competitionServices;
         this.clubsService = clubsService;
         this.formBuilder = formBuilder;
-        this.selectedClubs = [{}];
+        this.selectedClubs = [];
+        console.log(data);
         competitionServices.getCompetitionTypes().valueChanges().subscribe(function (data) {
             _this.competitionTypes = data;
         });
@@ -1393,29 +1788,27 @@ var ManageGroupsComponent = /** @class */ (function () {
     }
     ManageGroupsComponent.prototype.ngOnInit = function () {
         this.getClubs();
+        this.getClubsInGroup();
         this.getGroupsArray();
-        this.selectedClubs = [];
+    };
+    ManageGroupsComponent.prototype.getClubsInGroup = function () {
+        var clubsInGroup = [];
+        for (var i = 1; i <= this.data.numberOfClubsPerGroup; i++) {
+            clubsInGroup.push(i);
+        }
+        return clubsInGroup;
     };
     ManageGroupsComponent.prototype.getGroupsArray = function () {
         var groups = [];
-        for (var i = 1; i <= this.data.numberOfClubsPerGroup; i++) {
+        for (var i = 1; i <= this.data.numberOfGroups; i++) {
             groups.push(i);
         }
         return groups;
     };
-    ManageGroupsComponent.prototype.getCompetitionsTypes = function () {
-        var _this = this;
-        this.loading = true;
-        this.competitionServices.getCompetitionTypes().valueChanges().subscribe(function (data) {
-            _this.competitionsTypesData = data;
-            _this.loading = false;
-        });
-    };
     ManageGroupsComponent.prototype.getCompetitionType = function (id) {
-        if (id && this.competitionsTypesData) {
-            var compType = this.competitionsTypesData.find(function (competitionType) { return competitionType.id === id; });
-            return compType;
-        }
+        this.competitionServices.getCompetitionByID(id).then(function (data) {
+            return data;
+        });
     };
     ManageGroupsComponent.prototype.getClubs = function () {
         var _this = this;
@@ -1428,17 +1821,21 @@ var ManageGroupsComponent = /** @class */ (function () {
         });
     };
     ManageGroupsComponent.prototype.onClubSelect = function (club, group) {
-        this.selectedClubs.push({ club: club, group: group });
-        console.log(this.selectedClubs);
+        this.selectedClubs.push({ club: club, group: group.group });
+    };
+    ManageGroupsComponent.prototype.removeClub = function (club) {
+        this.selectedClubs = this.selectedClubs.filter(function (item) { return item.club !== club; });
+    };
+    ManageGroupsComponent.prototype.checkIfClubSelected = function (id) {
+        return this.selectedClubs.find(function (item) { return item.club == id; });
     };
     ManageGroupsComponent.prototype.onCancel = function () {
         this.dialogRef.close();
     };
-    ManageGroupsComponent.prototype.updateCompetition = function () {
+    ManageGroupsComponent.prototype.addGroups = function () {
         this.competitionData = this.data;
-        this.competitionData.groups = this.selectedClubs;
+        this.competitionData.groupedClubs = this.selectedClubs.length > 0 ? this.selectedClubs : null;
         this.competitionServices.updateCompetition(this.competitionData);
-        this.dialogRef.close();
     };
     ManageGroupsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1517,7 +1914,7 @@ var DashboardComponent = /** @class */ (function () {
             styles: [__webpack_require__("./src/app/pages/dashboard/dashboard.component.scss")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_providers_service__["a" /* AuthProvidersService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer */]])
     ], DashboardComponent);
     return DashboardComponent;
@@ -1530,7 +1927,7 @@ var DashboardComponent = /** @class */ (function () {
 /***/ "./src/app/pages/matches/fixtures/add-fixture/add-fixture.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>{{ data?.id ? 'Edit Fixture' : 'Add Fixture' }}</h1>\n<form [formGroup]=\"form\" class=\"add-competition-form\">\n  <div mat-dialog-content>\n    \n      <div uk-grid>\n        <div class=\"uk-width-3-5@m\">\n            <mat-form-field style=\"width: 100%\">\n                <mat-select placeholder=\"Competition\" (change)=\"onCompetitionChange($event.value)\" formControlName=\"competition\" required>\n                  <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">\n                    {{ item.description }}\n                  </mat-option>\n                </mat-select>\n              </mat-form-field>\n          </div>\n          \n          <div class=\"uk-width-expand@m\">\n              <mat-form-field style=\"width: 100%\">\n                  <mat-select placeholder=\"Select campaign\"\n                      formControlName=\"campaign\" required>\n                      <mat-option *ngFor=\"let item of campaignsData\" [value]=\"item.id\">\n                          {{ item.campaign }}\n                      </mat-option>\n                  </mat-select>\n              </mat-form-field>\n          </div>\n        </div>\n\n\n    <mat-form-field style=\"width: 45%\">\n        <mat-select placeholder=\"Home club\" #homeClub formControlName=\"homeClub\" (change)=\"onHomeClubChange($event.value)\" required>\n            <mat-option *ngFor=\"let item of clubsData\" [value]=\"(awayClub.value == item.id) ? null : item.id\" [disabled]=\"item.id === homeClub.value\">\n            {{ loading ? 'Loading...' : item.name }}\n            </mat-option>\n        </mat-select>\n    </mat-form-field>\n\n      <span class=\"uk-h5\" style=\"padding: 0;margin-left: 7px;\">V</span>\n\n      <mat-form-field style=\"width: 45%; float: right\">\n        <mat-select placeholder=\"Away club\" #awayClub formControlName=\"awayClub\" required>\n          <mat-option *ngFor=\"let item of clubsData\" [value]=\"(homeClub.value == item.id) ? null : item.id\" [disabled]=\"item.id === awayClub.value\">\n            {{ loading ? 'Loading...' : item.name }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n\n      <div uk-grid>\n          <div class=\"uk-width-expand@m\">\n              <div>\n                  <mat-form-field style=\"width: 100%\">\n                      <input matInput formControlName=\"vanue\" placeholder=\"Venue\">\n                  </mat-form-field>\n              </div>\n          </div>\n          <div class=\"uk-width-1-3@m\">\n              <div>\n                  <mat-form-field>\n                    <input matInput formControlName=\"date\" [matDatepicker]=\"picker\" placeholder=\"When\">\n                    <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n                    <mat-datepicker #picker></mat-datepicker>\n                  </mat-form-field>\n              </div>\n          </div>\n          <div class=\"uk-width-auto@m\">\n              <div>\n                  <mat-form-field style=\"width: 100%\">\n                      <input type=\"time\" matInput formControlName=\"kickOffTime\" placeholder=\"KickOff time\">\n                  </mat-form-field>\n              </div>\n          </div>\n      </div>\n      <div uk-grid>\n        <div>\n            <mat-checkbox formControlName=\"hasTwoLegs\">Has two legs?</mat-checkbox>\n        </div>\n      </div>\n  </div>\n\n  <div mat-dialog-actions class=\"uk-align-right\">\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\n    <button mat-button (click)=\"addFixture()\" [disabled]=\"!form.valid\" mat-raised-button color=\"primary\" cdkFocusInitial>Save</button>\n  </div>\n</form>"
+module.exports = "<h1 mat-dialog-title>{{ data?.id ? 'Edit Fixture' : 'Add Fixture' }}</h1>\r\n<form [formGroup]=\"form\" class=\"add-competition-form\">\r\n  <div mat-dialog-content>\r\n    \r\n      <div uk-grid>\r\n        <div class=\"uk-width-3-5@m\">\r\n            <mat-form-field style=\"width: 100%\">\r\n                <mat-select placeholder=\"Competition\" (change)=\"onCompetitionChange($event.value)\" formControlName=\"competition\" required>\r\n                  <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">\r\n                    {{ item.description }}\r\n                  </mat-option>\r\n                </mat-select>\r\n              </mat-form-field>\r\n          </div>\r\n          \r\n          <div class=\"uk-width-expand@m\">\r\n              <mat-form-field style=\"width: 100%\">\r\n                  <mat-select placeholder=\"Select campaign\"\r\n                      formControlName=\"campaign\" required>\r\n                      <mat-option *ngFor=\"let item of campaignsData\" [value]=\"item.id\">\r\n                          {{ item.campaign }}\r\n                      </mat-option>\r\n                  </mat-select>\r\n              </mat-form-field>\r\n          </div>\r\n        </div>\r\n\r\n\r\n    <mat-form-field style=\"width: 45%\">\r\n        <mat-select placeholder=\"Home club\" #homeClub formControlName=\"homeClub\" (change)=\"onHomeClubChange($event.value)\" required>\r\n            <mat-option *ngFor=\"let item of clubsData\" [value]=\"(awayClub.value == item.id) ? null : item.id\" [disabled]=\"item.id === homeClub.value\">\r\n            {{ loading ? 'Loading...' : item.name }}\r\n            </mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n      <span class=\"uk-h5\" style=\"padding: 0;margin-left: 7px;\">V</span>\r\n\r\n      <mat-form-field style=\"width: 45%; float: right\">\r\n        <mat-select placeholder=\"Away club\" #awayClub formControlName=\"awayClub\" required>\r\n          <mat-option *ngFor=\"let item of clubsData\" [value]=\"(homeClub.value == item.id) ? null : item.id\" [disabled]=\"item.id === awayClub.value\">\r\n            {{ loading ? 'Loading...' : item.name }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n\r\n      <div uk-grid>\r\n          <div class=\"uk-width-expand@m\">\r\n              <div>\r\n                  <mat-form-field style=\"width: 100%\">\r\n                      <input matInput formControlName=\"vanue\" placeholder=\"Venue\">\r\n                  </mat-form-field>\r\n              </div>\r\n          </div>\r\n          <div class=\"uk-width-1-3@m\">\r\n              <div>\r\n                  <mat-form-field>\r\n                    <input matInput formControlName=\"date\" [matDatepicker]=\"picker\" placeholder=\"When\">\r\n                    <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n                    <mat-datepicker #picker></mat-datepicker>\r\n                  </mat-form-field>\r\n              </div>\r\n          </div>\r\n          <div class=\"uk-width-auto@m\">\r\n              <div>\r\n                  <mat-form-field style=\"width: 100%\">\r\n                      <input type=\"time\" matInput formControlName=\"kickOffTime\" placeholder=\"KickOff time\">\r\n                  </mat-form-field>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <div uk-grid>\r\n        <div>\r\n            <mat-checkbox formControlName=\"hasTwoLegs\">Has two legs?</mat-checkbox>\r\n        </div>\r\n      </div>\r\n  </div>\r\n\r\n  <div mat-dialog-actions class=\"uk-align-right\">\r\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\r\n    <button mat-button (click)=\"addFixture()\" [disabled]=\"!form.valid\" mat-raised-button color=\"primary\" cdkFocusInitial>Save</button>\r\n  </div>\r\n</form>"
 
 /***/ }),
 
@@ -1673,14 +2070,14 @@ var AddFixtureComponent = /** @class */ (function () {
 /***/ "./src/app/pages/matches/fixtures/fixtures-listing/fixtures.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"uk-section uk-section-muted uk-padding\">\n    <div uk-grid class=\"uk-flex-middle\">\n        <div class=\"uk-width-expand@m uk-width-1-1@s\">\n            <h1 class=\"uk-margin-remove\">Fixtures</h1>\n            <p class=\"uk-margin-remove\">Manage your fixtures</p>\n        </div>\n    </div>\n</div>\n\n      \n<mat-card *ngIf=\"!loading\" class=\"listing-container\">\n  <mat-card-content>\n    <div class=\"uk-section uk-section-default uk-padding-small\">\n        <form [formGroup]=\"fixturesFilters\">\n            <div class=\"uk-grid-small\" uk-grid>\n                <div class=\"uk-width-1-4@m uk-width-1-1@s\">\n                    <div class=\"uk-inline uk-width-1-1\">\n                        <mat-form-field class=\"uk-width-1-1\">\n                            <mat-select\n                                placeholder=\"Filter by Competition\"\n                                #competitionFilter\n                                formControlName=\"competitionFilterInput\"\n                                (change)=\"onCompetitionChange($event.value);seasonFilter.value = null;clubFilter.value = null\"\n                                >\n                            <mat-option value=\"\">All competition</mat-option>\n                            <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">\n                                {{ item.description }}\n                            </mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"uk-width-1-4@m uk-width-1-1@s\" [hidden]=\"fixturesFilters.value.competitionFilterInput == ''\">\n                    <div class=\"uk-inline uk-width-1-1\">\n                        <mat-form-field class=\"uk-width-1-1\">\n                            <mat-select placeholder=\"Filter by campaign\"\n                                #seasonFilter\n                                formControlName=\"seasonFilterInput\"\n                                (change)=\"onSeasonChange($event.value)\">\n                                <!-- <mat-option value=\"\">All</mat-option> -->\n                                <mat-option *ngFor=\"let item of campaignsData\" [value]=\"item.id\">\n                                    {{ item.campaign }}\n                                </mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"uk-width-1-4@m uk-width-1-1@s\">\n                    <div class=\"uk-inline uk-width-1-1\">\n                        <mat-form-field class=\"uk-width-1-1\">\n                            <mat-select placeholder=\"Filter by Club\" #clubFilter formControlName=\"clubFilterInput\" (change)=\"onClubChange($event.value)\">\n                                <mat-option value=\"\">All</mat-option>\n                                <mat-option *ngFor=\"let item of filteredClubsData\" [value]=\"item.id\">\n                                    {{ item.name }}\n                                </mat-option>\n                            </mat-select>\n                        </mat-form-field>\n                    </div>\n                </div>\n                <div class=\"uk-width-1-4@m uk-width-1-1@s\">\n                    <button mat-button (click)=\"clearFilters();clubFilter.value='';seasonFilter.value=''\" color=\"warn\">Clear filters</button>\n                </div>\n            </div>\n        </form>\n    </div>\n\n    <div class=\"fixtures-tab-content uk-padding-remove-top\">\n        <mat-card *ngIf=\"fixturesData?.length == 0 && !loading\">\n            <p class=\"uk-text-center\">No fixtures found :(</p>\n        </mat-card>\n        <div *ngIf=\"fixturesData?.length > 0 && !loading\">\n            <mat-card class=\"fixture-card\" *ngFor=\"let item of fixturesData\">\n                <table class=\"uk-table uk-table-divider\">\n                    <tbody>\n                        <button *ngIf=\"mobileQuery.matches\" class=\"uk-position-top-right\"  mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\n                        <tr style=\"border: none\" *ngIf=\"mobileQuery.matches\">\n                            <td style=\"padding: 10px 0;\" colspan=\"3\">{{ item.date | date: 'mediumDate' }}, {{ item.kickOffTime ? item.kickOffTime : 'TBA' }}</td>\n                        <tr style=\"border: none\">\n                            <td class=\"uk-padding-remove\" width=\"230\" class=\"uk-text-right@m\">\n                                <i matPrefix mat-list-icon class=\"club-logo-placeholder fas fa-shield-alt\"></i>\n                                <p>{{ getClubDetails(item.homeClub) }}</p>\n                            </td>\n                            <td class=\"fixture-vs\" width=\"80\">\n                                <span class=\"uk-label fixture-vs-score\" *ngIf=\"item.status == 'PLAYED'\">\n                                    <span>FT</span> <br><span>{{ item.homeScore }} - {{ item.awayScore }}</span> <br>\n                                    <span *ngIf=\"item.isDecidedOnPenalties\">Pen {{ item.homePenaltyScore }} - {{ item.awayPenaltyScore }}</span>\n                                </span>\n                                <span class=\"uk-label fixture-vs-score\" *ngIf=\"item.status == 'UPCOMING'\">vs</span>\n                            </td>\n                            <td class=\"uk-padding-remove fixture-away-club\" width=\"230\">\n                                <i matPrefix mat-list-icon class=\"club-logo-placeholder fas fa-shield-alt\"></i>\n                                <p>{{ getClubDetails(item.awayClub) }}</p>\n                            </td>\n                            <td class=\"uk-padding-remove\" [hidden]=\"mobileQuery.matches\" width=\"200\" [ngClass]=\"{'uk-text-muted': !item.vanue}\">{{ item.vanue ? item.vanue : 'TBA' }}</td>\n                            <td class=\"uk-padding-remove\" [hidden]=\"true\" width=\"70\">SS4</td>\n                            <td class=\"uk-padding-remove uk-text-center\" [hidden]=\"mobileQuery.matches\" [ngClass]=\"{'uk-text-muted': !item.kickOffTime}\" width=\"120\">{{ item.kickOffTime ? item.kickOffTime : 'TBA' }}</td>\n                            <td [hidden]=\"mobileQuery.matches\" width=\"80\" class=\"uk-text-right uk-padding-remove\">\n                                <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\n                                <mat-menu #menu=\"matMenu\">\n                                    <button mat-menu-item (click)=\"editFixture(item)\">\n                                        <mat-icon>mode_edit</mat-icon>\n                                        <span>Edit</span>\n                                    </button>\n                                    <button mat-menu-item (click)=\"updateResults(item)\">\n                                        <mat-icon>code</mat-icon>\n                                        <span>Update results</span>\n                                    </button>\n                                    <button mat-menu-item (click)=\"deleteFixture(item)\">\n                                        <mat-icon>delete</mat-icon>\n                                        <span>Delete</span>\n                                    </button>\n                                </mat-menu>\n                            </td>\n                        </tr>\n                    </tbody>\n                </table>\n            </mat-card>\n        </div>\n    </div>\n    <button *ngIf=\"floatBtnShown\" class=\"floating-add-button\" (click)=\"openAddFixture($event, competitionFilter.value)\" mat-fab color=\"primary\"  matTooltip=\"Add new fixture\"[matTooltipPosition]=\"'left'\">\n        <mat-icon aria-label=\"Add new fixture\">add</mat-icon>\n    </button>\n    </mat-card-content>\n</mat-card>\n\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>"
+module.exports = "<div class=\"uk-section uk-section-muted uk-padding\">\r\n    <div uk-grid class=\"uk-flex-middle\">\r\n        <div class=\"uk-width-expand@m uk-width-1-1@s\">\r\n            <h1 class=\"uk-margin-remove\">Fixtures</h1>\r\n            <p class=\"uk-margin-remove\">Manage your fixtures</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n      \r\n<mat-card *ngIf=\"!loading\" class=\"listing-container\">\r\n  <mat-card-content>\r\n    <div class=\"uk-section uk-section-default uk-padding-small\">\r\n        <form [formGroup]=\"fixturesFilters\">\r\n            <div class=\"uk-grid-small\" uk-grid>\r\n                <div class=\"uk-width-1-4@m uk-width-1-1@s\">\r\n                    <div class=\"uk-inline uk-width-1-1\">\r\n                        <mat-form-field class=\"uk-width-1-1\">\r\n                            <mat-select\r\n                                placeholder=\"Filter by Competition\"\r\n                                #competitionFilter\r\n                                formControlName=\"competitionFilterInput\"\r\n                                (change)=\"onCompetitionChange($event.value);seasonFilter.value = null;clubFilter.value = null\"\r\n                                >\r\n                            <mat-option value=\"\">All competition</mat-option>\r\n                            <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">\r\n                                {{ item.description }}\r\n                            </mat-option>\r\n                            </mat-select>\r\n                        </mat-form-field>\r\n                    </div>\r\n                </div>\r\n                <div class=\"uk-width-1-4@m uk-width-1-1@s\" [hidden]=\"fixturesFilters.value.competitionFilterInput == ''\">\r\n                    <div class=\"uk-inline uk-width-1-1\">\r\n                        <mat-form-field class=\"uk-width-1-1\">\r\n                            <mat-select placeholder=\"Filter by campaign\"\r\n                                #seasonFilter\r\n                                formControlName=\"seasonFilterInput\"\r\n                                (change)=\"onSeasonChange($event.value)\">\r\n                                <!-- <mat-option value=\"\">All</mat-option> -->\r\n                                <mat-option *ngFor=\"let item of campaignsData\" [value]=\"item.id\">\r\n                                    {{ item.campaign }}\r\n                                </mat-option>\r\n                            </mat-select>\r\n                        </mat-form-field>\r\n                    </div>\r\n                </div>\r\n                <div class=\"uk-width-1-4@m uk-width-1-1@s\">\r\n                    <div class=\"uk-inline uk-width-1-1\">\r\n                        <mat-form-field class=\"uk-width-1-1\">\r\n                            <mat-select placeholder=\"Filter by Club\" #clubFilter formControlName=\"clubFilterInput\" (change)=\"onClubChange($event.value)\">\r\n                                <mat-option value=\"\">All</mat-option>\r\n                                <mat-option *ngFor=\"let item of filteredClubsData\" [value]=\"item.id\">\r\n                                    {{ item.name }}\r\n                                </mat-option>\r\n                            </mat-select>\r\n                        </mat-form-field>\r\n                    </div>\r\n                </div>\r\n                <div class=\"uk-width-1-4@m uk-width-1-1@s\">\r\n                    <button mat-button (click)=\"clearFilters();clubFilter.value='';seasonFilter.value=''\" color=\"warn\">Clear filters</button>\r\n                </div>\r\n            </div>\r\n        </form>\r\n    </div>\r\n\r\n    <div class=\"fixtures-tab-content uk-padding-remove-top\">\r\n        <mat-card *ngIf=\"fixturesData?.length == 0 && !loading\">\r\n            <p class=\"uk-text-center\">No fixtures found :(</p>\r\n        </mat-card>\r\n\r\n        <!-- <app-fixtures-listing\r\n            [competitionID]=\"competitionID\"\r\n            [competitionType]=\"competitionTypeData\"\r\n            [clubsData]=\"clubsData\">\r\n        </app-fixtures-listing> -->\r\n\r\n        <div *ngIf=\"fixturesData?.length > 0 && !loading\">\r\n            <mat-card class=\"fixture-card\" *ngFor=\"let item of fixturesData\">\r\n                <table class=\"uk-table uk-table-divider\">\r\n                    <tbody>\r\n                        <button *ngIf=\"mobileQuery.matches\" class=\"uk-position-top-right\"  mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\r\n                        <tr style=\"border: none\" *ngIf=\"mobileQuery.matches\">\r\n                            <td style=\"padding: 10px 0;\" colspan=\"3\">{{ item.date | date: 'mediumDate' }}, {{ item.kickOffTime ? item.kickOffTime : 'TBA' }}</td>\r\n                        <tr style=\"border: none\">\r\n                            <td class=\"uk-padding-remove\" width=\"230\" class=\"uk-text-right@m\">\r\n                                <i matPrefix mat-list-icon class=\"club-logo-placeholder fas fa-shield-alt\"></i>\r\n                                <p>{{ getClubDetails(item.homeClub) }}</p>\r\n                            </td>\r\n                            <td class=\"fixture-vs\" width=\"80\">\r\n                                <span class=\"uk-label fixture-vs-score\" *ngIf=\"item.status == 'PLAYED'\">\r\n                                    <span>FT</span> <br><span>{{ item.homeScore }} - {{ item.awayScore }}</span> <br>\r\n                                    <span *ngIf=\"item.isDecidedOnPenalties\">Pen {{ item.homePenaltyScore }} - {{ item.awayPenaltyScore }}</span>\r\n                                </span>\r\n                                <span class=\"uk-label fixture-vs-score\" *ngIf=\"item.status == 'UPCOMING'\">vs</span>\r\n                            </td>\r\n                            <td class=\"uk-padding-remove fixture-away-club\" width=\"230\">\r\n                                <i matPrefix mat-list-icon class=\"club-logo-placeholder fas fa-shield-alt\"></i>\r\n                                <p>{{ getClubDetails(item.awayClub) }}</p>\r\n                            </td>\r\n                            <td class=\"uk-padding-remove\" [hidden]=\"mobileQuery.matches\" width=\"200\" [ngClass]=\"{'uk-text-muted': !item.vanue}\">{{ item.vanue ? item.vanue : 'TBA' }}</td>\r\n                            <td class=\"uk-padding-remove\" [hidden]=\"true\" width=\"70\">SS4</td>\r\n                            <td class=\"uk-padding-remove uk-text-center\" [hidden]=\"mobileQuery.matches\" [ngClass]=\"{'uk-text-muted': !item.kickOffTime}\" width=\"120\">{{ item.kickOffTime ? item.kickOffTime : 'TBA' }}</td>\r\n                            <td [hidden]=\"mobileQuery.matches\" width=\"80\" class=\"uk-text-right uk-padding-remove\">\r\n                                <button mat-icon-button [matMenuTriggerFor]=\"menu\"><mat-icon>more_horiz</mat-icon></button>\r\n                                <mat-menu #menu=\"matMenu\">\r\n                                    <button mat-menu-item (click)=\"editFixture(item)\">\r\n                                        <mat-icon>mode_edit</mat-icon>\r\n                                        <span>Edit</span>\r\n                                    </button>\r\n                                    <button mat-menu-item (click)=\"updateResults(item)\">\r\n                                        <mat-icon>code</mat-icon>\r\n                                        <span>Update results</span>\r\n                                    </button>\r\n                                    <button mat-menu-item (click)=\"deleteFixture(item)\">\r\n                                        <mat-icon>delete</mat-icon>\r\n                                        <span>Delete</span>\r\n                                    </button>\r\n                                </mat-menu>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </mat-card>\r\n        </div>\r\n    </div>\r\n    <button *ngIf=\"floatBtnShown\" class=\"floating-add-button\" (click)=\"openAddFixture($event, competitionFilter.value)\" mat-fab color=\"primary\"  matTooltip=\"Add new fixture\"[matTooltipPosition]=\"'left'\">\r\n        <mat-icon aria-label=\"Add new fixture\">add</mat-icon>\r\n    </button>\r\n    </mat-card-content>\r\n</mat-card>\r\n\r\n<mat-progress-bar mode=\"indeterminate\" *ngIf=\"loading\"></mat-progress-bar>"
 
 /***/ }),
 
 /***/ "./src/app/pages/matches/fixtures/fixtures-listing/fixtures.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ".fixture-card {\n  margin: 10px 1px; }\n  @media (min-width: 769px) {\n    .fixture-card {\n      padding: 15px 0; } }\n  @media (max-width: 768px) {\n    .fixture-card {\n      padding: 15px 15px; } }\n  .fixture-card .uk-table td {\n    vertical-align: middle;\n    padding: 0; }\n  .fixture-card .uk-table td.fixture-vs {\n      padding: 10px;\n      text-align: center; }\n  .fixture-card .uk-table td.fixture-vs span {\n        text-align: center;\n        margin: auto; }\n  @media (min-width: 769px) {\n          .fixture-card .uk-table td.fixture-vs span {\n            width: 70%; } }\n  @media (max-width: 768px) {\n          .fixture-card .uk-table td.fixture-vs span {\n            width: auto; } }\n  .fixture-card .club-logo-placeholder {\n    font-size: 2rem; }\n  @media (max-width: 768px) {\n    .fixture-card .fixture-away-club {\n      text-align: right; } }\n  .fixtures-tab-content {\n  padding-top: 20px; }\n"
+module.exports = ".fixtures-tab-content {\n  padding-top: 20px; }\n"
 
 /***/ }),
 
@@ -1690,17 +2087,15 @@ module.exports = ".fixture-card {\n  margin: 10px 1px; }\n  @media (min-width: 7
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FixturesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_campains_campaigns_service__ = __webpack_require__("./src/app/providers/campains/campaigns.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__add_fixture_add_fixture_component__ = __webpack_require__("./src/app/pages/matches/fixtures/add-fixture/add-fixture.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_firestore__ = __webpack_require__("./node_modules/angularfire2/firestore/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_competitions_competition_providers_service__ = __webpack_require__("./src/app/providers/competitions/competition-providers.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_clubs_clubs_providers_service__ = __webpack_require__("./src/app/providers/clubs/clubs-providers.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_cdk_layout__ = __webpack_require__("./node_modules/@angular/cdk/esm5/layout.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_fixtures_fixtures_providers_service__ = __webpack_require__("./src/app/providers/fixtures/fixtures-providers.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__update_fixture_update_fixture_component__ = __webpack_require__("./src/app/pages/matches/fixtures/update-fixture/update-fixture.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_firestore__ = __webpack_require__("./node_modules/angularfire2/firestore/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_competitions_competition_providers_service__ = __webpack_require__("./src/app/providers/competitions/competition-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_clubs_clubs_providers_service__ = __webpack_require__("./src/app/providers/clubs/clubs-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_cdk_layout__ = __webpack_require__("./node_modules/@angular/cdk/esm5/layout.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_fixtures_fixtures_providers_service__ = __webpack_require__("./src/app/providers/fixtures/fixtures-providers.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1710,8 +2105,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
 
 
 
@@ -1734,11 +2127,10 @@ var FixturesComponent = /** @class */ (function () {
         this.fixturesService = fixturesService;
         this.campaignsService = campaignsService;
         this.floatBtnShown = true;
-        this.type = 'fixture';
-        this.fixturesFilters = new __WEBPACK_IMPORTED_MODULE_11__angular_forms__["d" /* FormGroup */]({
-            competitionFilterInput: new __WEBPACK_IMPORTED_MODULE_11__angular_forms__["c" /* FormControl */](),
-            seasonFilter: new __WEBPACK_IMPORTED_MODULE_11__angular_forms__["c" /* FormControl */](),
-            clubFilter: new __WEBPACK_IMPORTED_MODULE_11__angular_forms__["c" /* FormControl */]()
+        this.fixturesFilters = new __WEBPACK_IMPORTED_MODULE_9__angular_forms__["d" /* FormGroup */]({
+            competitionFilterInput: new __WEBPACK_IMPORTED_MODULE_9__angular_forms__["c" /* FormControl */](),
+            seasonFilter: new __WEBPACK_IMPORTED_MODULE_9__angular_forms__["c" /* FormControl */](),
+            clubFilter: new __WEBPACK_IMPORTED_MODULE_9__angular_forms__["c" /* FormControl */]()
         });
         this.mobileQuery = media.matchMedia('(max-width: 767px)');
         this._mobileQueryListener = function () { return changeDetectorRef.detectChanges(); };
@@ -1746,8 +2138,9 @@ var FixturesComponent = /** @class */ (function () {
         this.loading = true;
         clubsService.getClubs().valueChanges().subscribe(function (data) {
             _this.clubsData = data;
+            _this.competitionID = data[0].id;
             _this.fixturesFilters = _this.formBuilder.group({
-                competitionFilterInput: data[4].id,
+                competitionFilterInput: data[0].id,
                 seasonFilterInput: null,
                 clubFilterInput: null
             });
@@ -1790,6 +2183,7 @@ var FixturesComponent = /** @class */ (function () {
     };
     FixturesComponent.prototype.onCompetitionChange = function (id) {
         var _this = this;
+        this.competitionID = id;
         if (id) {
             this.fixturesService.getFixturesByCompetitionID(id).subscribe(function (data) {
                 _this.filteredFixturesData = data;
@@ -1828,29 +2222,6 @@ var FixturesComponent = /** @class */ (function () {
             return club.name;
         }
     };
-    // ACTIONS
-    FixturesComponent.prototype.openAddFixture = function (event, id) {
-        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_1__add_fixture_add_fixture_component__["a" /* AddFixtureComponent */], {
-            width: '700px',
-            data: { competition: id }
-        });
-    };
-    FixturesComponent.prototype.editFixture = function (item) {
-        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_1__add_fixture_add_fixture_component__["a" /* AddFixtureComponent */], {
-            width: '700px',
-            data: item
-        });
-    };
-    FixturesComponent.prototype.updateResults = function (item) {
-        // add results
-        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_10__update_fixture_update_fixture_component__["a" /* UpdateFixtureComponent */], {
-            width: '700px',
-            data: item
-        });
-    };
-    FixturesComponent.prototype.deleteFixture = function (item) {
-        this.fixturesService.deleteFixture(this.type, item);
-    };
     FixturesComponent.prototype.resetFilterForm = function () {
         this.fixturesFilters = this.formBuilder.group({
             competitionFilterInput: this.competitionsData[4].id,
@@ -1860,28 +2231,28 @@ var FixturesComponent = /** @class */ (function () {
     };
     FixturesComponent.prototype.clearFilters = function () {
         this.fixturesFilters = this.formBuilder.group({
-            competitionFilterInput: this.competitionsData[4].id,
+            competitionFilterInput: '',
             seasonFilterInput: null,
             clubFilterInput: null
         });
         this.onCompetitionChange(this.fixturesFilters.value.competitionFilterInput);
     };
     FixturesComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["n" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
             selector: 'app-fixtures',
             template: __webpack_require__("./src/app/pages/matches/fixtures/fixtures-listing/fixtures.component.html"),
             styles: [__webpack_require__("./src/app/pages/matches/fixtures/fixtures-listing/fixtures.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_material__["i" /* MatDialog */],
-            __WEBPACK_IMPORTED_MODULE_4_angularfire2_firestore__["a" /* AngularFirestore */],
-            __WEBPACK_IMPORTED_MODULE_5_angularfire2_database__["a" /* AngularFireDatabase */],
-            __WEBPACK_IMPORTED_MODULE_6__providers_competitions_competition_providers_service__["a" /* CompetitionProvidersService */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_clubs_clubs_providers_service__["a" /* ClubsProvidersService */],
-            __WEBPACK_IMPORTED_MODULE_11__angular_forms__["b" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_9__providers_fixtures_fixtures_providers_service__["a" /* FixturesProvidersService */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_material__["i" /* MatDialog */],
+            __WEBPACK_IMPORTED_MODULE_3_angularfire2_firestore__["a" /* AngularFirestore */],
+            __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["a" /* AngularFireDatabase */],
+            __WEBPACK_IMPORTED_MODULE_5__providers_competitions_competition_providers_service__["a" /* CompetitionProvidersService */],
+            __WEBPACK_IMPORTED_MODULE_6__providers_clubs_clubs_providers_service__["a" /* ClubsProvidersService */],
+            __WEBPACK_IMPORTED_MODULE_9__angular_forms__["b" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_8__providers_fixtures_fixtures_providers_service__["a" /* FixturesProvidersService */],
             __WEBPACK_IMPORTED_MODULE_0__providers_campains_campaigns_service__["a" /* CampaignsService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_core__["k" /* ChangeDetectorRef */],
-            __WEBPACK_IMPORTED_MODULE_8__angular_cdk_layout__["d" /* MediaMatcher */]])
+            __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* ChangeDetectorRef */],
+            __WEBPACK_IMPORTED_MODULE_7__angular_cdk_layout__["d" /* MediaMatcher */]])
     ], FixturesComponent);
     return FixturesComponent;
 }());
@@ -1893,7 +2264,7 @@ var FixturesComponent = /** @class */ (function () {
 /***/ "./src/app/pages/matches/fixtures/update-fixture/update-fixture.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>Update Results</h1>\n<form [formGroup]=\"form\" class=\"add-competition-form\">\n  <div mat-dialog-content>\n    \n  <div uk-grid>\n    <div class=\"uk-width-3-5@m\">\n      <mat-form-field style=\"width: 100%\">\n          <mat-select placeholder=\"Competition\" formControlName=\"competition\" required>\n            <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">\n              {{ item.description }}\n            </mat-option>\n          </mat-select>\n      </mat-form-field>\n    </div>\n\n      <div class=\"uk-width-expand@m\">\n        <mat-form-field style=\"width: 100%\">\n            <mat-select placeholder=\"Select campaign\"\n                formControlName=\"campaign\" required>\n                <mat-option value=\"\">All</mat-option>\n                <mat-option *ngFor=\"let item of campaignsData\" [value]=\"item.id\">\n                    {{ item.campaign }}\n                </mat-option>\n            </mat-select>\n        </mat-form-field>\n      </div>\n    </div>\n\n\n    <mat-form-field style=\"width: 45%\">\n        <mat-select placeholder=\"Home club\" #homeClub formControlName=\"homeClub\" required>\n          <mat-option *ngFor=\"let item of clubsData\" [value]=\"(awayClub.value == item.id) ? null : item.id\">\n            {{ item.name }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n\n      <span class=\"uk-h6\" style=\"padding: 0 15px;\">VS</span>\n\n      <mat-form-field style=\"width: 45%; float: right\">\n        <mat-select placeholder=\"Away club\" #awayClub formControlName=\"awayClub\" required>\n          <mat-option *ngFor=\"let item of clubsData\" [value]=\"(homeClub.value == item.id) ? null : item.id\">\n            {{ item.name }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n\n      <div class=\"uk-text-center\">\n        <span class=\"uk-text-success\">Score</span>\n      </div>\n\n      <span *ngIf=\"data?.hasTwoLegs\">1st leg</span>\n      <div uk-grid>\n          <div class=\"uk-width-1-2@m\">\n              <div>\n                  <mat-form-field style=\"width: 100%\">\n                      <input type=\"number\" matInput formControlName=\"homeScore\" placeholder=\"Home score\" required>\n                  </mat-form-field>\n              </div>\n          </div>\n          \n          <div class=\"uk-width-1-2@m\">\n              <div>\n                  <mat-form-field style=\"width: 100%\">\n                      <input type=\"number\" matInput formControlName=\"awayScore\" placeholder=\"Away score\" required>\n                  </mat-form-field>\n              </div>\n          </div>\n      </div>\n\n      <p *ngIf=\"data?.hasTwoLegs\">2nd leg</p>\n      <div uk-grid *ngIf=\"data?.hasTwoLegs\">\n          <div class=\"uk-width-1-2@m\">\n            <div>\n              <mat-form-field style=\"width: 100%\">\n                <input type=\"number\" matInput formControlName=\"homeScore\" placeholder=\"Home score\" required>\n              </mat-form-field>\n            </div>\n          </div>\n          \n          <div class=\"uk-width-1-2@m\">\n            <div>\n              <mat-form-field style=\"width: 100%\">\n                  <input type=\"number\" matInput formControlName=\"awayScore\" placeholder=\"Away score\" required>\n              </mat-form-field>\n            </div>\n          </div>\n      </div>\n\n      \n      <div uk-grid class=\"uk-margin-remove\">\n        <div class=\"uk-padding-remove\">\n            <mat-checkbox formControlName=\"isDecidedOnPenalties\">Decided on penalties?</mat-checkbox>\n        </div>\n      </div>\n\n      <p class=\"uk-h6 uk-margin-top\" *ngIf=\"form.value.isDecidedOnPenalties\">Penalty Scores</p>\n      \n      <div uk-grid *ngIf=\"form.value.isDecidedOnPenalties\" class=\"uk-child-width-1-2@m\">\n          <div>\n            <div>\n              <mat-form-field style=\"width: 100%\">\n                <input type=\"number\" matInput formControlName=\"homePenaltyScore\" placeholder=\"Home penalty score\">\n              </mat-form-field>\n            </div>\n          </div>\n          \n          <div>\n            <div>\n              <mat-form-field style=\"width: 100%\">\n                  <input type=\"number\" matInput formControlName=\"awayPenaltyScore\" placeholder=\"Away penalty score\">\n              </mat-form-field>\n            </div>\n          </div>\n      </div>\n\n  </div>\n\n  <div mat-dialog-actions class=\"uk-align-right\">\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\n    <button mat-button (click)=\"addFixture()\" [disabled]=\"!form.valid\" mat-raised-button color=\"primary\" cdkFocusInitial>Save</button>\n  </div>\n</form>"
+module.exports = "<h1 mat-dialog-title>Update Results</h1>\r\n<form [formGroup]=\"form\" class=\"add-competition-form\">\r\n  <div mat-dialog-content>\r\n    \r\n  <div uk-grid>\r\n    <div class=\"uk-width-3-5@m\">\r\n      <mat-form-field style=\"width: 100%\">\r\n          <mat-select placeholder=\"Competition\" formControlName=\"competition\" required>\r\n            <mat-option *ngFor=\"let item of competitionsData\" [value]=\"item.id\">\r\n              {{ item.description }}\r\n            </mat-option>\r\n          </mat-select>\r\n      </mat-form-field>\r\n    </div>\r\n\r\n      <div class=\"uk-width-expand@m\">\r\n        <mat-form-field style=\"width: 100%\">\r\n            <mat-select placeholder=\"Select campaign\"\r\n                formControlName=\"campaign\" required>\r\n                <mat-option value=\"\">All</mat-option>\r\n                <mat-option *ngFor=\"let item of campaignsData\" [value]=\"item.id\">\r\n                    {{ item.campaign }}\r\n                </mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n      </div>\r\n    </div>\r\n\r\n\r\n    <mat-form-field style=\"width: 45%\">\r\n        <mat-select placeholder=\"Home club\" #homeClub formControlName=\"homeClub\" required>\r\n          <mat-option *ngFor=\"let item of clubsData\" [value]=\"(awayClub.value == item.id) ? null : item.id\">\r\n            {{ item.name }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n\r\n      <span class=\"uk-h6\" style=\"padding: 0 15px;\">VS</span>\r\n\r\n      <mat-form-field style=\"width: 45%; float: right\">\r\n        <mat-select placeholder=\"Away club\" #awayClub formControlName=\"awayClub\" required>\r\n          <mat-option *ngFor=\"let item of clubsData\" [value]=\"(homeClub.value == item.id) ? null : item.id\">\r\n            {{ item.name }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n\r\n      <div class=\"uk-text-center\">\r\n        <span class=\"uk-text-success\">Score</span>\r\n      </div>\r\n\r\n      <span *ngIf=\"data?.hasTwoLegs\">1st leg</span>\r\n      <div uk-grid>\r\n          <div class=\"uk-width-1-2@m\">\r\n              <div>\r\n                  <mat-form-field style=\"width: 100%\">\r\n                      <input type=\"number\" matInput formControlName=\"homeScore\" placeholder=\"Home score\" required>\r\n                  </mat-form-field>\r\n              </div>\r\n          </div>\r\n          \r\n          <div class=\"uk-width-1-2@m\">\r\n              <div>\r\n                  <mat-form-field style=\"width: 100%\">\r\n                      <input type=\"number\" matInput formControlName=\"awayScore\" placeholder=\"Away score\" required>\r\n                  </mat-form-field>\r\n              </div>\r\n          </div>\r\n      </div>\r\n\r\n      <p *ngIf=\"data?.hasTwoLegs\">2nd leg</p>\r\n      <div uk-grid *ngIf=\"data?.hasTwoLegs\">\r\n          <div class=\"uk-width-1-2@m\">\r\n            <div>\r\n              <mat-form-field style=\"width: 100%\">\r\n                <input type=\"number\" matInput formControlName=\"homeScore\" placeholder=\"Home score\" required>\r\n              </mat-form-field>\r\n            </div>\r\n          </div>\r\n          \r\n          <div class=\"uk-width-1-2@m\">\r\n            <div>\r\n              <mat-form-field style=\"width: 100%\">\r\n                  <input type=\"number\" matInput formControlName=\"awayScore\" placeholder=\"Away score\" required>\r\n              </mat-form-field>\r\n            </div>\r\n          </div>\r\n      </div>\r\n\r\n      \r\n      <div uk-grid class=\"uk-margin-remove\">\r\n        <div class=\"uk-padding-remove\">\r\n            <mat-checkbox formControlName=\"isDecidedOnPenalties\">Decided on penalties?</mat-checkbox>\r\n        </div>\r\n      </div>\r\n\r\n      <p class=\"uk-h6 uk-margin-top\" *ngIf=\"form.value.isDecidedOnPenalties\">Penalty Scores</p>\r\n      \r\n      <div uk-grid *ngIf=\"form.value.isDecidedOnPenalties\" class=\"uk-child-width-1-2@m\">\r\n          <div>\r\n            <div>\r\n              <mat-form-field style=\"width: 100%\">\r\n                <input type=\"number\" matInput formControlName=\"homePenaltyScore\" placeholder=\"Home penalty score\">\r\n              </mat-form-field>\r\n            </div>\r\n          </div>\r\n          \r\n          <div>\r\n            <div>\r\n              <mat-form-field style=\"width: 100%\">\r\n                  <input type=\"number\" matInput formControlName=\"awayPenaltyScore\" placeholder=\"Away penalty score\">\r\n              </mat-form-field>\r\n            </div>\r\n          </div>\r\n      </div>\r\n\r\n  </div>\r\n\r\n  <div mat-dialog-actions class=\"uk-align-right\">\r\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\r\n    <button mat-button (click)=\"addFixture()\" [disabled]=\"!form.valid\" mat-raised-button color=\"primary\" cdkFocusInitial>Save</button>\r\n  </div>\r\n</form>"
 
 /***/ }),
 
@@ -2024,7 +2395,7 @@ var UpdateFixtureComponent = /** @class */ (function () {
 /***/ "./src/app/pages/matches/standings/standings.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<mat-card>\n    <p>\n        standings works!\n    </p>\n</mat-card>"
+module.exports = "\r\n\r\n<mat-card>\r\n    <p>\r\n        standings works!\r\n    </p>\r\n</mat-card>"
 
 /***/ }),
 
@@ -2074,7 +2445,7 @@ var StandingsComponent = /** @class */ (function () {
 /***/ "./src/app/pages/news/news-listing/news-listing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  news-listing works!\n</p>\n"
+module.exports = "<p>\r\n  news-listing works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -2125,7 +2496,7 @@ var NewsListingComponent = /** @class */ (function () {
 /***/ "./src/app/pages/page-not-found/page-not-found.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  page-not-found works!\n</p>\n"
+module.exports = "<p>\r\n  page-not-found works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -2431,9 +2802,17 @@ var CompetitionProvidersService = /** @class */ (function () {
         this.confirmDialog = confirmDialog;
         this.snackBar = snackBar;
         this.competitionsDB = this.afs.collection('competitions');
+        this.competitionTypesDB = this.afs.collection('compTypes');
     }
     CompetitionProvidersService.prototype.getCompetitionTypes = function () {
         return this.afs.collection('compTypes');
+    };
+    CompetitionProvidersService.prototype.getCompetitionTypeByID = function (id) {
+        return this.competitionTypesDB.doc(id).ref.get().then(function (doc) {
+            return doc.data();
+        }).catch(function (error) {
+            console.log("Error getting document:", error);
+        });
     };
     CompetitionProvidersService.prototype.getCompetitions = function () {
         return this.competitionsDB;
@@ -2449,7 +2828,6 @@ var CompetitionProvidersService = /** @class */ (function () {
         });
     };
     CompetitionProvidersService.prototype.getCompetitionByID = function (id) {
-        // return this.afs.collection('competitions', ref => ref.where('id', '==', id));
         return this.competitionsDB.doc(id).ref.get().then(function (doc) {
             return doc.data();
         }).catch(function (error) {
