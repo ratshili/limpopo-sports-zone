@@ -1062,13 +1062,13 @@ var CampaignsComponent = /** @class */ (function () {
     CampaignsComponent.prototype.toggleBodyScrolling = function () {
     };
     CampaignsComponent.prototype.openAddCampaign = function () {
-        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_6__add_campaign_add_campaign_component__["a" /* AddCampaignComponent */], {
+        this.dialog.open(__WEBPACK_IMPORTED_MODULE_6__add_campaign_add_campaign_component__["a" /* AddCampaignComponent */], {
             width: '500px',
             data: null
         });
     };
     CampaignsComponent.prototype.editCampaing = function (item) {
-        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_6__add_campaign_add_campaign_component__["a" /* AddCampaignComponent */], {
+        this.dialog.open(__WEBPACK_IMPORTED_MODULE_6__add_campaign_add_campaign_component__["a" /* AddCampaignComponent */], {
             width: '500px',
             data: item
         });
@@ -1681,6 +1681,7 @@ var CompetitionComponent = /** @class */ (function () {
         });
     }
     CompetitionComponent.prototype.ngOnInit = function () {
+        window.scrollTo(0, 0);
         this.getCompetition();
         this.getClubs();
     };
