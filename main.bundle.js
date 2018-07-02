@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-container\" [class.example-is-mobile]=\"mobileQuery.matches\">\r\n    <mat-toolbar color=\"primary\" class=\"example-toolbar\" *ngIf=\"currentUser?.uid\">\r\n        <mat-toolbar-row>\r\n            <button mat-icon-button (click)=\"snav.toggle()\"><mat-icon>menu</mat-icon></button>\r\n            <span class=\"example-spacer\"></span>\r\n            <mat-icon class=\"example-icon\">account_circle</mat-icon>\r\n            <button mat-button [matMenuTriggerFor]=\"menu\">Admin</button>\r\n            <mat-menu #menu=\"matMenu\">\r\n                <button mat-menu-item>Settings</button>\r\n                <button mat-menu-item (click)=\"logout()\">Logout</button>\r\n            </mat-menu>\r\n        </mat-toolbar-row>\r\n    </mat-toolbar>\r\n  \r\n    <mat-sidenav-container\r\n        class=\"example-sidenav-container\"\r\n        [style.marginTop.px]=\"mobileQuery.matches ? (currentUser?.uid ? 56 : 0) : 0\">\r\n      <mat-sidenav\r\n        [hidden]=\"!currentUser?.uid\"\r\n        #snav [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\r\n        [fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"fixtures\">Fixtures</a>\r\n        </mat-nav-list>\r\n\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"standings\">Standings</a>\r\n        </mat-nav-list>\r\n        \r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"clubs\">Clubs</a>\r\n        </mat-nav-list>\r\n\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"competitions\">Competitions</a>\r\n        </mat-nav-list>\r\n\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"campaigns\">Campaigns</a>\r\n        </mat-nav-list>\r\n\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\".\">News</a>\r\n        </mat-nav-list>\r\n      </mat-sidenav>\r\n  \r\n      <mat-sidenav-content class=\"uk-padding bg-transparent\" uk-height-viewport>\r\n        <router-outlet></router-outlet>\r\n      </mat-sidenav-content>\r\n    </mat-sidenav-container>\r\n  </div>\r\n  "
+module.exports = "<div class=\"example-container\" [class.example-is-mobile]=\"mobileQuery.matches\">\r\n    <mat-toolbar color=\"primary\" class=\"example-toolbar\" *ngIf=\"currentUser?.uid\">\r\n        <mat-toolbar-row>\r\n            <button mat-icon-button (click)=\"snav.toggle()\" *ngIf=\"!isLevelTwoPage\"><mat-icon>menu</mat-icon></button>\r\n            <button mat-icon-button (click)=\"goBack()\" *ngIf=\"isLevelTwoPage\"><mat-icon>arrow_back</mat-icon></button>\r\n            <span class=\"example-spacer\"></span>\r\n            <mat-icon class=\"example-icon\">account_circle</mat-icon>\r\n            <button mat-button [matMenuTriggerFor]=\"menu\">Admin</button>\r\n            <mat-menu #menu=\"matMenu\">\r\n                <button mat-menu-item>Settings</button>\r\n                <button mat-menu-item (click)=\"logout()\">Logout</button>\r\n            </mat-menu>\r\n        </mat-toolbar-row>\r\n    </mat-toolbar>\r\n  \r\n    <mat-sidenav-container\r\n        class=\"example-sidenav-container\"\r\n        [style.marginTop.px]=\"mobileQuery.matches ? (currentUser?.uid ? 56 : 0) : 0\">\r\n      <mat-sidenav\r\n        [hidden]=\"!currentUser?.uid\"\r\n        #snav [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\r\n        [fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"fixtures\">Fixtures</a>\r\n        </mat-nav-list>\r\n\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"standings\">Standings</a>\r\n        </mat-nav-list>\r\n        \r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"clubs\">Clubs</a>\r\n        </mat-nav-list>\r\n\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"competitions\">Competitions</a>\r\n        </mat-nav-list>\r\n\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\"campaigns\">Campaigns</a>\r\n        </mat-nav-list>\r\n\r\n        <mat-nav-list (click)=\"mobileQuery.matches ? snav.toggle() : null\">\r\n            <a mat-list-item routerLink=\".\">News</a>\r\n        </mat-nav-list>\r\n      </mat-sidenav>\r\n  \r\n      <mat-sidenav-content class=\"uk-padding bg-transparent\" uk-height-viewport>\r\n        <router-outlet></router-outlet>\r\n      </mat-sidenav-content>\r\n    </mat-sidenav-container>\r\n  </div>\r\n  "
 
 /***/ }),
 
@@ -54,16 +54,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent(authData, router, changeDetectorRef, media, renderer) {
+    function AppComponent(authData, router, changeDetectorRef, media, renderer, route) {
         var _this = this;
         this.authData = authData;
         this.router = router;
         this.renderer = renderer;
+        this.route = route;
         this.title = 'app';
         this.fillerNav = Array(50).fill(0).map(function (_, i) { return "Nav Item " + (i + 1); });
-        this.fillerContent = Array(50).fill(0).map(function () {
-            return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco\n       laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in\n       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\n       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-        });
         this.mobileQuery = media.matchMedia('(max-width: 767px)');
         this._mobileQueryListener = function () { return changeDetectorRef.detectChanges(); };
         this.mobileQuery.addListener(this._mobileQueryListener);
@@ -73,6 +71,7 @@ var AppComponent = /** @class */ (function () {
         this.router.events.subscribe(function (event) {
             if (event instanceof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* NavigationEnd */]) {
                 _this.checkIfAuthPages();
+                _this.isLevelTwoPage = ((event.url.split('/').length - 1) == 2) ? true : false;
             }
         });
     }
@@ -81,6 +80,9 @@ var AppComponent = /** @class */ (function () {
         this.authData.logoutUser().then(function () {
             _this.router.navigate(['/login']);
         });
+    };
+    AppComponent.prototype.goBack = function () {
+        window.history.go(-1);
     };
     AppComponent.prototype.checkIfAuthPages = function () {
         return window.location.href.indexOf("login") > -1 || window.location.href.indexOf("register") > -1;
@@ -98,7 +100,8 @@ var AppComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* ChangeDetectorRef */],
             __WEBPACK_IMPORTED_MODULE_3__angular_cdk_layout__["d" /* MediaMatcher */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer */]])
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -209,13 +212,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_17__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
         children: [
-            { path: '', component: __WEBPACK_IMPORTED_MODULE_33__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */] },
-            { path: 'competitions', component: __WEBPACK_IMPORTED_MODULE_22__pages_competitions_competition_listings_competition_listings_component__["a" /* CompetitionListingsComponent */] },
-            { path: 'competitions/:id', component: __WEBPACK_IMPORTED_MODULE_40__pages_competitions_competition_competition_component__["a" /* CompetitionComponent */] },
-            { path: 'clubs', component: __WEBPACK_IMPORTED_MODULE_23__pages_clubs_clubs_listing_clubs_listing_component__["a" /* ClubsListingComponent */] },
-            { path: 'fixtures', component: __WEBPACK_IMPORTED_MODULE_33__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */] },
-            { path: 'campaigns', component: __WEBPACK_IMPORTED_MODULE_36__pages_campaigns_campaigns_component__["a" /* CampaignsComponent */] },
-            { path: 'standings', component: __WEBPACK_IMPORTED_MODULE_30__pages_matches_standings_standings_component__["a" /* StandingsComponent */] }
+            { path: '', component: __WEBPACK_IMPORTED_MODULE_33__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */], data: { pageLevel: 'one' } },
+            { path: 'competitions', component: __WEBPACK_IMPORTED_MODULE_22__pages_competitions_competition_listings_competition_listings_component__["a" /* CompetitionListingsComponent */], data: { pageLevel: 'one' } },
+            { path: 'competitions/:id', component: __WEBPACK_IMPORTED_MODULE_40__pages_competitions_competition_competition_component__["a" /* CompetitionComponent */], data: { pageLevel: 'two' } },
+            { path: 'clubs', component: __WEBPACK_IMPORTED_MODULE_23__pages_clubs_clubs_listing_clubs_listing_component__["a" /* ClubsListingComponent */], data: { pageLevel: 'one' } },
+            { path: 'fixtures', component: __WEBPACK_IMPORTED_MODULE_33__pages_matches_fixtures_fixtures_listing_fixtures_component__["a" /* FixturesComponent */], data: { pageLevel: 'one' } },
+            { path: 'campaigns', component: __WEBPACK_IMPORTED_MODULE_36__pages_campaigns_campaigns_component__["a" /* CampaignsComponent */], data: { pageLevel: 'one' } },
+            { path: 'standings', component: __WEBPACK_IMPORTED_MODULE_30__pages_matches_standings_standings_component__["a" /* StandingsComponent */], data: { pageLevel: 'one' } }
         ]
     },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_16__pages_auth_login_login_component__["a" /* LoginComponent */] },
